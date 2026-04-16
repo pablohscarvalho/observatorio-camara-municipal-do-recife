@@ -30,20 +30,22 @@ def ler_json(nome_arquivo: str):
     caminho_normal = os.path.join(DATA_DIR, nome_arquivo)
     caminho_zip = os.path.join(DATA_DIR, nome_arquivo.replace('.json', '.zip'))
     
-    # 1. Tenta ler o arquivo ZIP primeiro (Se você compactou para fugir do limite do GitHub)
     if os.path.exists(caminho_zip):
         try:
             with zipfile.ZipFile(caminho_zip, 'r') as z:
-                # Abre o arquivo json que está lá dentro do zip
-                with z.open(nome_arquivo) as f:
+                # LISTA OS ARQUIVOS DENTRO DO ZIP
+                lista_arquivos = z.namelist()
+                
+                # Tenta achar o arquivo direto ou dentro de uma pasta 'data/'
+                target = nome_arquivo
+                if f"data/{nome_arquivo}" in lista_arquivos:
+                    target = f"data/{nome_arquivo}"
+                
+                with z.open(target) as f:
                     return json.load(f)
         except Exception as e:
             print(f"Erro ao ler zip: {e}")
 
-    # 2. Se não achar o ZIP, tenta ler o arquivo JSON normal
-    if not os.path.exists(caminho_normal):
-        caminho_normal = nome_arquivo # Fallback
-        
     if os.path.exists(caminho_normal):
         with open(caminho_normal, "r", encoding="utf-8") as arquivo:
             return json.load(arquivo)
