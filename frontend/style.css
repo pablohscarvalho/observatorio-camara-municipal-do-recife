@@ -1,0 +1,290 @@
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --primary: #3b82f6;
+    --text-main: #334155;
+    --text-muted: #94a3b8;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto; 
+    padding: 30px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+}
+
+.user-info {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+}
+
+.kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.kpi-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.blue { background-color: #3b82f6; }
+.green { background-color: #10b981; }
+.purple { background-color: #8b5cf6; }
+.orange { background-color: #f59e0b; }
+
+.kpi-info .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.kpi-info h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.tag {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.vereadores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.vereador-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.vereador-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tela { display: none; }
+
+.btn-voltar {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.btn-voltar:hover { text-decoration: underline; }
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+#perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--border);
+}
+.perfil-info h2 { font-size: 2rem; margin-bottom: 5px;}
+
+.perfil-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.lista-simples { list-style: none; }
+.lista-simples li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+}
+
+.destaque-azul { color: var(--primary); font-size: 2.5rem; margin: 10px 0;}
+.destaque-laranja { color: #f59e0b; font-size: 2.2rem; margin: 10px 0;}
+.texto-miudo { color: var(--text-muted); font-size: 0.85rem;}
+
+.lista-scroll {
+    max-height: 140px; 
+    overflow-y: auto;  
+    padding-right: 10px;
+    width: 100%;
+}
+.lista-scroll::-webkit-scrollbar { width: 6px; }
+.lista-scroll::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+.lista-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.lista-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.filtro-select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    color: #333;
+    font-family: inherit;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.filtro-select:hover { border-color: var(--primary); }
+
+.lista-proposicoes-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+.lista-proposicoes-scroll::-webkit-scrollbar { width: 6px; }
+.lista-proposicoes-scroll::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+.lista-proposicoes-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+.prop-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 0;
+    text-align: left;
+}
+.prop-item:last-child { border-bottom: none; }
+
+.prop-tipo {
+    font-size: 0.75rem;
+    background: #e0e7ff;
+    color: #4f46e5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.prop-desc-destaque {
+    font-size: 1.05rem;
+    color: #1e293b;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    line-height: 1.4;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.prop-titulo-menor {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.prop-link {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #3b82f6;
+    padding: 5px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.prop-link:hover { background-color: #2563eb; }
+
+/* Botões Interativos */
+.btn-filtro-prop {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+.btn-filtro-prop:hover {
+    background-color: #e2e8f0;
+}
+.btn-filtro-prop.ativo {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+#chartPartidos {
+    cursor: pointer;
+}
