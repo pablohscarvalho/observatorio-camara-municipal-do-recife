@@ -1,6 +1,6 @@
 // AQUI: Voltamos para o localhost para funcionar no seu computador.
 // Quando quiser testar o Render de novo, basta trocar por: "https://observatorio-camara-municipal-do-recife.onrender.com"
-const API_BASE = "http://localhost:8000"; 
+const API_BASE = "https://observatorio-camara-municipal-do-recife.onrender.com";
 
 let chartSalarioInstance = null;
 let chartRaioXInstance = null;
