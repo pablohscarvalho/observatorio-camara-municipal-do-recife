@@ -246,3 +246,66 @@ def listar_tipos_proposicoes(ano: str = "2025"):
             resultado.append({"tipo": nome_tipo, "count": qtd_no_ano})
     resultado.sort(key=lambda x: x["count"], reverse=True)
     return {"tipos": resultado}
+
+# ==========================================
+# NOVO ENDPOINT: CUSTO DE COMISSIONADOS
+# ==========================================
+@app.get("/vereadores/{vereador_id}/comissionados")
+def obter_comissionados_gabinete(vereador_id: str, nome_vereador: str):
+    folder = os.path.join(DADOS_EXTRAS_DIR, "remuneracao_comissionados")
+    padrao = os.path.join(folder, "**", "remuneracao_gabinete_*.csv")
+    arquivos = glob.glob(padrao, recursive=True)
+    
+    if not arquivos:
+        return {"total": 0, "servidores": [], "periodo": "N/A"}
+
+    # Organiza os arquivos para pegar o mês/ano mais recente
+    def extrair_data(p):
+        fname = os.path.basename(p).replace(".csv", "")
+        partes = fname.split("_")
+        try:
+            mes = int(partes[-2])
+            ano = int(partes[-1])
+            return (ano, mes)
+        except:
+            return (0, 0)
+
+    arquivos.sort(key=extrair_data, reverse=True)
+    recente = arquivos[0]
+    ano, mes = extrair_data(recente)
+    periodo_str = f"{str(mes).zfill(2)}/{ano}" if ano > 0 else "N/A"
+    
+    total = 0.0
+    servidores = []
+    nome_ver_limpo = remover_acentos(nome_vereador).upper().strip()
+
+    try:
+        with open(recente, mode="r", encoding="utf-8-sig") as f:
+            leitor = csv.DictReader(f, delimiter=";")
+            for linha in leitor:
+                # No CSV dos comissionados, a coluna se chama "Lotação Secretaria/Diretoria"
+                lotacao = remover_acentos(linha.get("Lotação Secretaria/Diretoria", "")).upper()
+                
+                # Se o nome do vereador está na lotação (mesmo com "VER." na frente)
+                if nome_ver_limpo in lotacao or lotacao.replace("VER. ", "").strip() in nome_ver_limpo:
+                    bruto_str = linha.get("Total de Vantagens", "0").replace(",", ".")
+                    try:
+                        bruto = float(bruto_str)
+                    except:
+                        bruto = 0.0
+                        
+                    if bruto > 0:
+                        total += bruto
+                        servidores.append({
+                            "nome": linha.get("Nome", "Desconhecido").strip(),
+                            "bruto": bruto,
+                            "cargo": linha.get("Função", linha.get("Cargo", "N/A")).strip()
+                        })
+    except Exception as e:
+        print(f"Erro ao ler comissionados: {e}")
+
+    return {
+        "total": total,
+        "periodo": periodo_str,
+        "servidores": sorted(servidores, key=lambda x: x["bruto"], reverse=True)
+    }

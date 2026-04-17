@@ -1,8 +1,7 @@
-// AQUI: Voltamos para o localhost para funcionar no seu computador.
-const API_BASE = "https://observatorio-camara-municipal-do-recife-1.onrender.com";
+// AQUI: Voltado para rodar na SUA MÁQUINA, como combinado!
+const API_BASE = "https://observatorio-camara-municipal-do-recife-1.onrender.com"; 
 
 let chartSalarioInstance = null;
-let chartRaioXInstance = null;
 let chartPartidosInstance = null;
 
 let historicoSalarioGlobal = [];
@@ -14,7 +13,7 @@ function obterCorDoPartido(nomePartido) {
     const p = nomePartido.toUpperCase();
     if (p.includes("PSB") || p === "PT" || p.includes("PCDOB") || p.includes("PV") || 
         p.includes("MDB") || p.includes("REPUBLICANOS") || p.includes("AVANTE") || 
-        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("REP")) {
+        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("FEDERAÇÃO")) {
         return '#10b981'; 
     }
     if (p.includes("PL") || p.includes("NOVO") || p.includes("PP") || 
@@ -89,7 +88,6 @@ async function loadDashboard() {
 
 async function carregarTiposProposicoes() {
     try {
-        // Alterado de 2025 para 2026 para carregar os dados reais do seu print
         const res = await fetch(`${API_BASE}/proposicoes/tipos?ano=2026`);
         if (res.ok) {
             const data = await res.json();
@@ -100,7 +98,6 @@ async function carregarTiposProposicoes() {
                 data.tipos.forEach(item => { labels.push(item.tipo); values.push(item.count); });
 
                 if (labels.length > 0) {
-                    // Atualiza o título visualmente para bater com os dados de 2026
                     const headerTema = document.querySelector('#chartTemas').parentElement.previousElementSibling;
                     if(headerTema) headerTema.innerText = "Volume por Tipo de Matéria (2026)";
 
@@ -214,31 +211,43 @@ async function abrirPerfilVereador(vereador) {
         if(resProp.ok){
             const props = await resProp.json();
             document.getElementById('perfil-volume-prop').innerText = props.total || 0;
-            
             proposicoesVereadorGlobal = props.items || [];
-
-            if (chartRaioXInstance) { chartRaioXInstance.destroy(); }
-            const ctxRaioX = document.getElementById('chartRaioXProposicoes');
-            
-            if (ctxRaioX && props.resumo_tipos && Object.keys(props.resumo_tipos).length > 0) {
-                const tiposOrdenados = Object.entries(props.resumo_tipos).sort((a, b) => b[1] - a[1]);
-                const paletaCores = ['#3b82f6', '#8b5cf6', '#f43f5e', '#10b981', '#f59e0b', '#0ea5e9', '#6366f1'];
-
-                chartRaioXInstance = new Chart(ctxRaioX.getContext('2d'), {
-                    type: 'doughnut',
-                    data: {
-                        labels: tiposOrdenados.map(item => item[0]),
-                        datasets: [{ data: tiposOrdenados.map(item => item[1]), backgroundColor: paletaCores, borderWidth: 2, borderColor: '#ffffff' }]
-                    },
-                    options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { position: 'right' } } }
-                });
-                ctxRaioX.style.display = 'block';
-            } else if (ctxRaioX) { ctxRaioX.style.display = 'none'; }
             
             gerarBotoesFiltroProposicao();
             filtrarListaDeProposicoesNaTela('todos', null);
         }
     } catch(e) { document.getElementById('lista-proposicoes-detalhe').innerHTML = '<p style="color: red; text-align: center;">Erro de conexão.</p>'; }
+
+    // DADOS DE COMISSIONADOS
+    document.getElementById('total-custo-comissionados').innerText = '...';
+    document.getElementById('periodo-comissionados').innerText = 'Carregando...';
+    document.getElementById('lista-comissionados').innerHTML = '<li>Buscando equipe...</li>';
+
+    try {
+        const resCom = await fetch(`${API_BASE}/vereadores/${vereador.id}/comissionados?nome_vereador=${encodeURIComponent(vereador.nome)}`);
+        if (resCom.ok) {
+            const dados = await resCom.json();
+            document.getElementById('total-custo-comissionados').innerText = formatarMoeda(dados.total);
+            document.getElementById('periodo-comissionados').innerText = dados.periodo;
+
+            const lista = document.getElementById('lista-comissionados');
+            if (dados.servidores.length > 0) {
+                lista.innerHTML = dados.servidores.map(s => `
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f5f9;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600; font-size: 0.9rem; color: #1e293b;">${s.nome}</span>
+                            <span style="font-size: 0.75rem; color: #94a3b8;">${s.cargo}</span>
+                        </div>
+                        <span style="font-weight: bold; color: #10b981; font-size: 0.9rem;">${formatarMoeda(s.bruto)}</span>
+                    </li>
+                `).join('');
+            } else {
+                lista.innerHTML = '<li style="color: #94a3b8; font-size: 0.9rem;">Nenhum servidor identificado para este gabinete no mês atual.</li>';
+            }
+        }
+    } catch (e) {
+        document.getElementById('lista-comissionados').innerHTML = '<li style="color: red; font-size: 0.9rem;">Erro ao carregar dados dos comissionados.</li>';
+    }
 
     document.getElementById('perfil-gasto-total').innerText = '...';
     document.getElementById('filtro-ano-salario').value = '2026'; 
