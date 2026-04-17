@@ -1,5 +1,5 @@
 // AQUI: Voltamos para o localhost para funcionar no seu computador.
-const API_BASE = "https://observatorio-camara-municipal-do-re-rose.vercel.app/"; 
+const API_BASE = "https://observatorio-camara-municipal-do-recife-1.onrender.com";
 
 let chartSalarioInstance = null;
 let chartRaioXInstance = null;
