@@ -1,5 +1,5 @@
 // AQUI: Voltamos para o localhost para funcionar no seu computador.
-const API_BASE = "http://localhost:8000"; 
+const API_BASE = "https://observatorio-camara-municipal-do-re-rose.vercel.app/"; 
 
 let chartSalarioInstance = null;
 let chartRaioXInstance = null;
