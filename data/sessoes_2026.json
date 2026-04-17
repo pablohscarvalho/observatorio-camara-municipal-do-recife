@@ -1,0 +1,78 @@
+{
+  "@id": "https://e-processo.recife.pe.leg.br/@@sessoes",
+  "@type": "SessoesPlenarias",
+  "description": "Lista de reuniões plenárias",
+  "exemplo": {
+    "urlExemplo": "https://e-processo.recife.pe.leg.br/@@sessoes/tipo/1/ano/2024"
+  },
+  "filtros": {
+    "ano": [
+      {
+        "id": "2026",
+        "title": "2026"
+      },
+      {
+        "id": "2025",
+        "title": "2025"
+      },
+      {
+        "id": "2024",
+        "title": "2024"
+      },
+      {
+        "id": "2023",
+        "title": "2023"
+      },
+      {
+        "id": "2022",
+        "title": "2022"
+      },
+      {
+        "id": "2021",
+        "title": "2021"
+      },
+      {
+        "id": "2020",
+        "title": "2020"
+      }
+    ],
+    "tipo": [
+      {
+        "id": 4,
+        "title": " Solene de Instalação"
+      },
+      {
+        "id": 9,
+        "title": "Convocação Extraordinária"
+      },
+      {
+        "id": 7,
+        "title": "Eleição da Comissão Executiva"
+      },
+      {
+        "id": 6,
+        "title": "Encerramento"
+      },
+      {
+        "id": 2,
+        "title": "Extraordinária"
+      },
+      {
+        "id": 1,
+        "title": "Ordinária"
+      },
+      {
+        "id": 3,
+        "title": "Solene"
+      },
+      {
+        "id": 10,
+        "title": "Solene de Posse do Prefeito"
+      },
+      {
+        "id": 5,
+        "title": "Solene de Posse dos Vereadores"
+      }
+    ]
+  }
+}

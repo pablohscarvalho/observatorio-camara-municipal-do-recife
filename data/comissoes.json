@@ -1,0 +1,151 @@
+{
+  "@id": "https://e-processo.recife.pe.leg.br/@@comissoes",
+  "@type": "Comissoes",
+  "description": "Lista de comissões",
+  "items": [
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/65",
+      "@type": "Comissao",
+      "description": "CELPUOS",
+      "id": "65",
+      "tipo": "Especial",
+      "title": "Comissão Especial sobre Parcelamento, Uso e Ocupação do Solo do Recife (LPUOS)"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/61",
+      "@type": "Comissao",
+      "description": "CCPE",
+      "id": "61",
+      "tipo": "Especial",
+      "title": "Comissão Mista para opinar sobre as contas do Poder Executivo"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/64",
+      "@type": "Comissao",
+      "description": "CDDPD",
+      "id": "64",
+      "tipo": "Permanente",
+      "title": "Comissão da Defesa dos Direitos da Pessoa com Deficiência"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/45",
+      "@type": "Comissao",
+      "description": "CAMU",
+      "id": "45",
+      "tipo": "Permanente",
+      "title": "Comissão de Acessibilidade e Mobilidade Urbana"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/57",
+      "@type": "Comissao",
+      "description": "CDDM",
+      "id": "57",
+      "tipo": "Permanente",
+      "title": "Comissão de Defesa dos Direitos da Mulher"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/55",
+      "@type": "Comissao",
+      "description": "CDE",
+      "id": "55",
+      "tipo": "Permanente",
+      "title": "Comissão de Desenvolvimento Econômico"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/46",
+      "@type": "Comissao",
+      "description": "CDHC",
+      "id": "46",
+      "tipo": "Permanente",
+      "title": "Comissão de Direitos Humanos e Cidadania"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/31",
+      "@type": "Comissao",
+      "description": "CECTE",
+      "id": "31",
+      "tipo": "Permanente",
+      "title": "Comissão de Educação, Cultura, Turismo e Esportes"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+      "@type": "Comissao",
+      "description": "CFO",
+      "id": "50",
+      "tipo": "Permanente",
+      "title": "Comissão de Finanças e Orçamento"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/60",
+      "@type": "Comissao",
+      "description": "COMIRER",
+      "id": "60",
+      "tipo": "Permanente",
+      "title": "Comissão de Igualdade Racial e Enfrentamento ao Racismo"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/51",
+      "@type": "Comissao",
+      "description": "CLJ",
+      "id": "51",
+      "tipo": "Permanente",
+      "title": "Comissão de Legislação e Justiça"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/53",
+      "@type": "Comissao",
+      "description": "CMA",
+      "id": "53",
+      "tipo": "Permanente",
+      "title": "Comissão de Meio Ambiente"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/52",
+      "@type": "Comissao",
+      "description": "CPUO",
+      "id": "52",
+      "tipo": "Permanente",
+      "title": "Comissão de Planejamento Urbano e Obras"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/54",
+      "@type": "Comissao",
+      "description": "CPPJ",
+      "id": "54",
+      "tipo": "Permanente",
+      "title": "Comissão de Políticas Públicas da Juventude"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/56",
+      "@type": "Comissao",
+      "description": "CR",
+      "id": "56",
+      "tipo": "Permanente",
+      "title": "Comissão de Redação"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/43",
+      "@type": "Comissao",
+      "description": "CS",
+      "id": "43",
+      "tipo": "Permanente",
+      "title": "Comissão de Saúde"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/47",
+      "@type": "Comissao",
+      "description": "CSC",
+      "id": "47",
+      "tipo": "Permanente",
+      "title": "Comissão de Segurança Cidadã"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/48",
+      "@type": "Comissao",
+      "description": "CEDP",
+      "id": "48",
+      "tipo": "Permanente",
+      "title": "Comissão de Ética e Decoro Parlamentar"
+    }
+  ]
+}

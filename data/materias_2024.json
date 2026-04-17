@@ -1,0 +1,150 @@
+{
+  "@id": "https://e-processo.recife.pe.leg.br/@@materias",
+  "@type": "Materias",
+  "description": "Lista de matérias legislativas",
+  "exemplo": {
+    "urlExemplo": "https://e-processo.recife.pe.leg.br/@@materias?ano=2025&tipo=3"
+  },
+  "filtros": {
+    "ano": [
+      {
+        "id": "2026",
+        "title": "2026"
+      },
+      {
+        "id": "2025",
+        "title": "2025"
+      },
+      {
+        "id": "2024",
+        "title": "2024"
+      },
+      {
+        "id": "2023",
+        "title": "2023"
+      },
+      {
+        "id": "2022",
+        "title": "2022"
+      },
+      {
+        "id": "2021",
+        "title": "2021"
+      },
+      {
+        "id": "2020",
+        "title": "2020"
+      },
+      {
+        "id": "2019",
+        "title": "2019"
+      },
+      {
+        "id": "2018",
+        "title": "2018"
+      },
+      {
+        "id": "2017",
+        "title": "2017"
+      },
+      {
+        "id": "2016",
+        "title": "2016"
+      },
+      {
+        "id": "2015",
+        "title": "2015"
+      },
+      {
+        "id": "2014",
+        "title": "2014"
+      },
+      {
+        "id": "2013",
+        "title": "2013"
+      },
+      {
+        "id": "2012",
+        "title": "2012"
+      },
+      {
+        "id": "2011",
+        "title": "2011"
+      },
+      {
+        "id": "2010",
+        "title": "2010"
+      },
+      {
+        "id": "2009",
+        "title": "2009"
+      },
+      {
+        "id": "2008",
+        "title": "2008"
+      },
+      {
+        "id": "2007",
+        "title": "2007"
+      },
+      {
+        "id": "2006",
+        "title": "2006"
+      },
+      {
+        "id": "2005",
+        "title": "2005"
+      },
+      {
+        "id": "2004",
+        "title": "2004"
+      }
+    ],
+    "tipo": [
+      {
+        "id": "30",
+        "title": "Aditamento a Parecer"
+      },
+      {
+        "id": "15",
+        "title": "Emenda a Projeto de Lei do Executivo"
+      },
+      {
+        "id": "6",
+        "title": "Projeto de Decreto Legislativo"
+      },
+      {
+        "id": "14",
+        "title": "Projeto de Emenda à Lei Orgânica"
+      },
+      {
+        "id": "28",
+        "title": "Projeto de Lei Complementar"
+      },
+      {
+        "id": "11",
+        "title": "Projeto de Lei do Executivo"
+      },
+      {
+        "id": "10",
+        "title": "Projeto de Lei Ordinária"
+      },
+      {
+        "id": "2",
+        "title": "Projeto de Resolução"
+      },
+      {
+        "id": "23",
+        "title": "Proposta de Revisão à Lei Orgânica"
+      },
+      {
+        "id": "3",
+        "title": "Requerimento"
+      },
+      {
+        "id": "27",
+        "title": "Veto"
+      }
+    ]
+  }
+}

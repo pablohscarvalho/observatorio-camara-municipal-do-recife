@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
     <main class="content">
         <header>
             <div style="display: flex; flex-direction: column; gap: 5px;">
@@ -22,13 +21,11 @@
                 </span>
             </div>
             <div class="user-info">
-                <span>Atualizado Hoje</span>
-                <i class="fas fa-sync-alt" style="margin-left: 8px;"></i>
+                <span>Atualizado Hoje</span> <i class="fas fa-sync-alt" style="margin-left: 8px;"></i>
             </div>
         </header>
 
         <div id="view-dashboard" class="tela" style="display: block;">
-            
             <div class="kpi-grid">
                 <div class="card kpi-card">
                     <div class="kpi-icon blue"><i class="fas fa-file-signature"></i></div>
@@ -69,7 +66,6 @@
                             <span style="display:flex; align-items:center; gap:4px;"><span style="width:10px;height:10px;background:#f43f5e;border-radius:50%;"></span> Oposição</span>
                         </div>
                     </div>
-                    <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 15px;">Dica: Clique na barra de um partido para filtrar os vereadores abaixo.</p>
                     <canvas id="chartPartidos"></canvas>
                 </div>
                 <div class="card">
@@ -85,80 +81,37 @@
                     <h3 style="margin: 0; border: none; padding: 0;">Perfil dos Parlamentares</h3>
                     <span id="indicador-filtro-partido" style="display: none; background-color: var(--primary); color: white;" class="tag">
                         Mostrando apenas: <b id="nome-filtro-partido">PSB</b> 
-                        <i class="fas fa-times-circle" style="cursor:pointer; margin-left: 5px; font-size: 1rem;" onclick="limparFiltroPartido()" title="Limpar Filtro"></i>
+                        <i class="fas fa-times-circle" style="cursor:pointer; margin-left: 5px; font-size: 1rem;" onclick="limparFiltroPartido()"></i>
                     </span>
                 </div>
-                <div class="vereadores-grid" id="grid-vereadores">
-                    <p>Carregando dados dos vereadores...</p>
-                </div>
+                <div class="vereadores-grid" id="grid-vereadores"><p>A carregar...</p></div>
             </div>
         </div>
 
         <div id="view-vereador-detalhe" class="tela" style="display: none;">
-            <button id="btn-voltar" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar para Visão Geral</button>
-            
+            <button id="btn-voltar" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar</button>
             <div class="perfil-header card">
-                <img id="perfil-foto" src="https://via.placeholder.com/150" alt="Foto do Vereador">
-                <div class="perfil-info">
-                    <h2 id="perfil-nome">Nome do Vereador</h2>
-                    <span id="perfil-partido" class="tag">Partido</span>
-                </div>
+                <img id="perfil-foto" src="" alt="Foto">
+                <div class="perfil-info"><h2 id="perfil-nome"></h2><span id="perfil-partido" class="tag"></span></div>
             </div>
-
-            <div class="card" style="margin-bottom: 20px; flex-direction: column; align-items: stretch;">
+            <div class="card" style="margin-bottom: 20px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                    <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;"><i class="fas fa-chart-line"></i> Evolução Salarial no Ano Vigente</h3>
+                    <h3><i class="fas fa-chart-line"></i> Evolução Salarial</h3>
                     <select id="filtro-ano-salario" class="filtro-select">
-                        <option value="2026">2026 (Atual)</option>
-                        <option value="2025">2025</option>
-                        <option value="2024">2024</option>
-                        <option value="todos">Todos os Anos</option>
+                        <option value="2026">2026</option><option value="2025">2025</option><option value="todos">Todos</option>
                     </select>
                 </div>
                 <canvas id="chartSalario" height="80"></canvas>
             </div>
-
-            <div class="perfil-kpi-grid" style="margin-bottom: 20px;">
-                <div class="card">
-                    <h3><i class="fas fa-users"></i> Comissões Atuais</h3>
-                    <ul id="perfil-comissoes" class="lista-simples lista-scroll"></ul>
-                </div>
-                <div class="card">
-                    <h3><i class="fas fa-file-alt"></i> Proposições (2026)</h3>
-                    <h2 id="perfil-volume-prop" class="destaque-azul">0</h2>
-                    <p class="texto-miudo">Documentos protocolados</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fas fa-wallet"></i> Salário Acumulado</h3>
-                    <h2 id="perfil-gasto-total" class="destaque-laranja">R$ 0,00</h2>
-                    <p class="texto-miudo" id="label-gasto-total">Bruto no ano de 2026</p>
-                </div>
+            <div class="perfil-kpi-grid">
+                <div class="card"><h3>Comissões</h3><ul id="perfil-comissoes" class="lista-simples lista-scroll"></ul></div>
+                <div class="card"><h3>Proposições</h3><h2 id="perfil-volume-prop" class="destaque-azul">0</h2></div>
+                <div class="card"><h3>Acumulado</h3><h2 id="perfil-gasto-total" class="destaque-laranja">R$ 0,00</h2><p id="label-gasto-total"></p></div>
             </div>
-
-            <div class="card" style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                    <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;">Perfil de Produção Legislativa</h3>
-                    <span class="tag">Distribuição por Tipo</span>
-                </div>
-                <div style="padding-bottom: 10px; position: relative; height: 220px;">
-                    <canvas id="chartRaioXProposicoes"></canvas>
-                </div>
-            </div>
-
-            <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;">Últimas Proposições e Matérias</h3>
-                </div>
-                
-                <div id="filtros-proposicoes" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--border);">
-                </div>
-
-                <div id="lista-proposicoes-detalhe" class="lista-proposicoes-scroll">
-                </div>
-            </div>
+            <div class="card" style="margin: 20px 0;"><canvas id="chartRaioXProposicoes" height="220"></canvas></div>
+            <div class="card"><div id="filtros-proposicoes"></div><div id="lista-proposicoes-detalhe"></div></div>
         </div>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>

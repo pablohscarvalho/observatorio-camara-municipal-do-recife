@@ -1,6 +1,5 @@
 // AQUI: Voltamos para o localhost para funcionar no seu computador.
-// Quando quiser testar o Render de novo, basta trocar por: "https://observatorio-camara-municipal-do-recife.onrender.com"
-const API_BASE = "https://observatorio-camara-municipal-do-recife.onrender.com";
+const API_BASE = "http://localhost:8000"; 
 
 let chartSalarioInstance = null;
 let chartRaioXInstance = null;
@@ -15,7 +14,7 @@ function obterCorDoPartido(nomePartido) {
     const p = nomePartido.toUpperCase();
     if (p.includes("PSB") || p === "PT" || p.includes("PCDOB") || p.includes("PV") || 
         p.includes("MDB") || p.includes("REPUBLICANOS") || p.includes("AVANTE") || 
-        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("FEDERAÇÃO")) {
+        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("REP")) {
         return '#10b981'; 
     }
     if (p.includes("PL") || p.includes("NOVO") || p.includes("PP") || 
@@ -90,7 +89,8 @@ async function loadDashboard() {
 
 async function carregarTiposProposicoes() {
     try {
-        const res = await fetch(`${API_BASE}/proposicoes/tipos?ano=2025`);
+        // Alterado de 2025 para 2026 para carregar os dados reais do seu print
+        const res = await fetch(`${API_BASE}/proposicoes/tipos?ano=2026`);
         if (res.ok) {
             const data = await res.json();
             const labels = [];
@@ -100,6 +100,10 @@ async function carregarTiposProposicoes() {
                 data.tipos.forEach(item => { labels.push(item.tipo); values.push(item.count); });
 
                 if (labels.length > 0) {
+                    // Atualiza o título visualmente para bater com os dados de 2026
+                    const headerTema = document.querySelector('#chartTemas').parentElement.previousElementSibling;
+                    if(headerTema) headerTema.innerText = "Volume por Tipo de Matéria (2026)";
+
                     new Chart(document.getElementById('chartTemas'), {
                         type: 'bar',
                         data: {
@@ -125,7 +129,7 @@ async function carregarVereadoresNaMemoria() {
         vereadoresGlobal = dados.items ? dados.items : dados;
         renderizarGradeVereadores(); 
     } catch (error) {
-        document.getElementById('grid-vereadores').innerHTML = '<p style="color: red;">Erro ao carregar vereadores.</p>';
+        document.getElementById('grid-vereadores').innerHTML = '<p style="color: red; grid-column: 1 / -1; text-align: center;">Erro ao carregar vereadores. Verifique se a API (localhost:8000) está rodando.</p>';
     }
 }
 

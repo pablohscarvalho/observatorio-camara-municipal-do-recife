@@ -1,0 +1,82 @@
+{
+  "gerado_em": "2026-04-16T08:46:06.492557",
+  "fonte": "https://e-processo.recife.pe.leg.br",
+  "portal": "https://transparencia.recife.pe.leg.br",
+  "arquivos": {
+    "vereadores.json": {
+      "tamanho_kb": 29.2,
+      "modificado": "2026-04-16T08:43:37.857000",
+      "registros": 37
+    },
+    "vereadores_detalhados.json": {
+      "tamanho_kb": 594.2,
+      "modificado": "2026-04-16T08:44:35.420000",
+      "registros": 37
+    },
+    "legislaturas.json": {
+      "tamanho_kb": 5.7,
+      "modificado": "2026-04-16T08:44:36.620000",
+      "registros": 19
+    },
+    "comissoes.json": {
+      "tamanho_kb": 4.6,
+      "modificado": "2026-04-16T08:44:40.800000",
+      "registros": 18
+    },
+    "sessoes_2024.json": {
+      "tamanho_kb": 1.5,
+      "modificado": "2026-04-16T08:44:42.499000",
+      "registros": 0
+    },
+    "sessoes_2025.json": {
+      "tamanho_kb": 1.5,
+      "modificado": "2026-04-16T08:44:43.697000",
+      "registros": 0
+    },
+    "sessoes_2026.json": {
+      "tamanho_kb": 1.5,
+      "modificado": "2026-04-16T08:44:44.875000",
+      "registros": 0
+    },
+    "materias_2024.json": {
+      "tamanho_kb": 2.7,
+      "modificado": "2026-04-16T08:44:46.193000",
+      "registros": 0
+    },
+    "materias_2025.json": {
+      "tamanho_kb": 2.7,
+      "modificado": "2026-04-16T08:44:47.520000",
+      "registros": 0
+    },
+    "materias_2026.json": {
+      "tamanho_kb": 2.7,
+      "modificado": "2026-04-16T08:44:48.765000",
+      "registros": 0
+    },
+    "normas_2024.json": {
+      "tamanho_kb": 1.8,
+      "modificado": "2026-04-16T08:44:49.952000",
+      "registros": 0
+    },
+    "normas_2025.json": {
+      "tamanho_kb": 1.8,
+      "modificado": "2026-04-16T08:44:51.135000",
+      "registros": 0
+    },
+    "normas_2026.json": {
+      "tamanho_kb": 1.8,
+      "modificado": "2026-04-16T08:44:52.331000",
+      "registros": 0
+    },
+    "materias_por_tipo.json": {
+      "tamanho_kb": 29301.3,
+      "modificado": "2026-04-16T08:46:06.125000",
+      "registros": 0
+    },
+    "_resumo.json": {
+      "tamanho_kb": 2.2,
+      "modificado": "2026-04-14T15:59:42.720000",
+      "registros": 0
+    }
+  }
+}

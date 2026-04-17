@@ -1,0 +1,102 @@
+{
+  "@id": "https://e-processo.recife.pe.leg.br/@@normas",
+  "@type": "Normas",
+  "description": "Lista de normas jurídicas",
+  "exemplo": {
+    "urlExemplo": "https://e-processo.recife.pe.leg.br/@@normas?ano=2025&tipo=5"
+  },
+  "filtros": {
+    "ano": [
+      {
+        "id": "2025",
+        "title": "2025"
+      },
+      {
+        "id": "2024",
+        "title": "2024"
+      },
+      {
+        "id": "2023",
+        "title": "2023"
+      },
+      {
+        "id": "2022",
+        "title": "2022"
+      },
+      {
+        "id": "2021",
+        "title": "2021"
+      },
+      {
+        "id": "2020",
+        "title": "2020"
+      },
+      {
+        "id": "2019",
+        "title": "2019"
+      },
+      {
+        "id": "2018",
+        "title": "2018"
+      },
+      {
+        "id": "2017",
+        "title": "2017"
+      },
+      {
+        "id": "2016",
+        "title": "2016"
+      },
+      {
+        "id": "2015",
+        "title": "2015"
+      },
+      {
+        "id": "2013",
+        "title": "2013"
+      },
+      {
+        "id": "2011",
+        "title": "2011"
+      },
+      {
+        "id": "2008",
+        "title": "2008"
+      },
+      {
+        "id": "2007",
+        "title": "2007"
+      },
+      {
+        "id": "2004",
+        "title": "2004"
+      },
+      {
+        "id": "1995",
+        "title": "1995"
+      }
+    ],
+    "tipo": [
+      {
+        "id": "5",
+        "title": "Decreto"
+      },
+      {
+        "id": "4",
+        "title": "Decreto Legislativo"
+      },
+      {
+        "id": "2",
+        "title": "Lei Complementar"
+      },
+      {
+        "id": "1",
+        "title": "Lei Ordinária"
+      },
+      {
+        "id": "3",
+        "title": "Resolução"
+      }
+    ]
+  }
+}

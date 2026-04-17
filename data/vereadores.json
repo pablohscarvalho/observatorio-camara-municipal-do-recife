@@ -1,0 +1,923 @@
+{
+  "@id": "https://e-processo.recife.pe.leg.br/@@vereadores",
+  "@type": "Vereadores",
+  "description": "Lista de Vereadores em exercício",
+  "items": [
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/145",
+      "@type": "Vereador",
+      "description": "Aderaldo Pinto",
+      "dic_vereador": "182",
+      "id": "145",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/145_foto_parlamentar",
+          "filename": "145_foto_parlamentar",
+          "height": "350",
+          "size": "66170",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Aderaldo Pinto",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/145_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/426",
+      "@type": "Vereador",
+      "description": "Agora é Rubem",
+      "dic_vereador": "264",
+      "id": "426",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/426_foto_parlamentar",
+          "filename": "426_foto_parlamentar",
+          "height": "350",
+          "size": "95343",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Agora é Rubem",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/426_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/168",
+      "@type": "Vereador",
+      "description": "Alcides Teixeira Neto",
+      "dic_vereador": "206",
+      "id": "168",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/168_foto_parlamentar",
+          "filename": "168_foto_parlamentar",
+          "height": "350",
+          "size": "193224",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "AVANTE",
+          "token": "Avante"
+        }
+      ],
+      "title": "Alcides Teixeira Neto",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/168_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/427",
+      "@type": "Vereador",
+      "description": "Alef Collins",
+      "dic_vereador": "265",
+      "id": "427",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/427_foto_parlamentar",
+          "filename": "427_foto_parlamentar",
+          "height": "350",
+          "size": "94934",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Progressista",
+          "token": "PP"
+        }
+      ],
+      "title": "Alef Collins",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/427_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/165",
+      "@type": "Vereador",
+      "description": "Ana Lúcia do Rego Ferreira",
+      "dic_vereador": "203",
+      "id": "165",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/165_foto_parlamentar",
+          "filename": "165_foto_parlamentar",
+          "height": "350",
+          "size": "212654",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Republicanos",
+          "token": "REP"
+        }
+      ],
+      "title": "Professora Ana Lúcia",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/165_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/402",
+      "@type": "Vereador",
+      "description": "Andreza Romero",
+      "dic_vereador": "239",
+      "id": "402",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/402_foto_parlamentar",
+          "filename": "402_foto_parlamentar",
+          "height": "350",
+          "size": "62598",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Andreza Romero",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/402_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/405",
+      "@type": "Vereador",
+      "description": "Carlos Muniz",
+      "dic_vereador": "242",
+      "id": "405",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/405_foto_parlamentar",
+          "filename": "405_foto_parlamentar",
+          "height": "350",
+          "size": "94136",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Carlos Muniz",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/405_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/167",
+      "@type": "Vereador",
+      "description": "Chico Kiko",
+      "dic_vereador": "205",
+      "id": "167",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/167_foto_parlamentar",
+          "filename": "167_foto_parlamentar",
+          "height": "350",
+          "size": "63409",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Chico Kiko",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/167_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/414",
+      "@type": "Vereador",
+      "description": "Cida Pedrosa",
+      "dic_vereador": "251",
+      "id": "414",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/414_foto_parlamentar",
+          "filename": "414_foto_parlamentar",
+          "height": "350",
+          "size": "122619",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Comunista do Brasil",
+          "token": "PCdoB"
+        }
+      ],
+      "title": "Cida Pedrosa",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/414_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/148",
+      "@type": "Vereador",
+      "description": "Davi Muniz",
+      "dic_vereador": "185",
+      "id": "148",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/148_foto_parlamentar",
+          "filename": "148_foto_parlamentar",
+          "height": "350",
+          "size": "93414",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Social Democrata",
+          "token": "PSD"
+        }
+      ],
+      "title": "Davi Muniz",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/148_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/429",
+      "@type": "Vereador",
+      "description": "Eduardo Moura",
+      "dic_vereador": "267",
+      "id": "429",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/429_foto_parlamentar",
+          "filename": "429_foto_parlamentar",
+          "height": "3024",
+          "size": "5173763",
+          "width": "2268"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Novo",
+          "token": "NOVO"
+        }
+      ],
+      "title": "Eduardo Moura",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/429_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/150",
+      "@type": "Vereador",
+      "description": "Eriberto Rafael",
+      "dic_vereador": "187",
+      "id": "150",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/150_foto_parlamentar",
+          "filename": "150_foto_parlamentar",
+          "height": "350",
+          "size": "187220",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Eriberto Rafael",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/150_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/410",
+      "@type": "Vereador",
+      "description": "Fabiano Ferraz",
+      "dic_vereador": "247",
+      "id": "410",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/410_foto_parlamentar",
+          "filename": "410_foto_parlamentar",
+          "height": "350",
+          "size": "165793",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+          "token": "MDB"
+        }
+      ],
+      "title": "Fabiano Ferraz",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/410_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/411",
+      "@type": "Vereador",
+      "description": "Felipe Alecrim",
+      "dic_vereador": "248",
+      "id": "411",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/411_foto_parlamentar",
+          "filename": "411_foto_parlamentar",
+          "height": "350",
+          "size": "179138",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Novo",
+          "token": "NOVO"
+        }
+      ],
+      "title": "Felipe Alecrim",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/411_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/152",
+      "@type": "Vereador",
+      "description": "Felipe Francismar",
+      "dic_vereador": "189",
+      "id": "152",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/152_foto_parlamentar",
+          "filename": "152_foto_parlamentar",
+          "height": "1066",
+          "size": "369744",
+          "width": "1600"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Felipe Francismar",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/152_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/430",
+      "@type": "Vereador",
+      "description": "Flávia de Nadegi",
+      "dic_vereador": "268",
+      "id": "430",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/430_foto_parlamentar",
+          "filename": "430_foto_parlamentar",
+          "height": "350",
+          "size": "109290",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Verde",
+          "token": "PV"
+        }
+      ],
+      "title": "Flávia de Nadegi",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/430_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/163",
+      "@type": "Vereador",
+      "description": "Fred Ferreira",
+      "dic_vereador": "201",
+      "id": "163",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/163_foto_parlamentar",
+          "filename": "163_foto_parlamentar",
+          "height": "350",
+          "size": "136351",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Liberal",
+          "token": "PL"
+        }
+      ],
+      "title": "Fred Ferreira",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/163_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/127",
+      "@type": "Vereador",
+      "description": "Gilberto Alves",
+      "dic_vereador": "162",
+      "id": "127",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/127_foto_parlamentar",
+          "filename": "127_foto_parlamentar",
+          "height": "350",
+          "size": "109232",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Renovação Democrática ",
+          "token": "PRD"
+        }
+      ],
+      "title": "Gilberto Alves",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/127_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/431",
+      "@type": "Vereador",
+      "description": "Gilson Machado Filho",
+      "dic_vereador": "269",
+      "id": "431",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/431_foto_parlamentar",
+          "filename": "431_foto_parlamentar",
+          "height": "2493",
+          "size": "2472785",
+          "width": "2493"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Podemos",
+          "token": "Podemos"
+        }
+      ],
+      "title": "Gilson Machado Filho",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/431_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/172",
+      "@type": "Vereador",
+      "description": "Hélio Guabiraba",
+      "dic_vereador": "210",
+      "id": "172",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/172_foto_parlamentar",
+          "filename": "172_foto_parlamentar",
+          "height": "350",
+          "size": "115764",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Hélio Guabiraba",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/172_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/171",
+      "@type": "Vereador",
+      "description": "Inaldo Gerson Pereira Freires",
+      "dic_vereador": "209",
+      "id": "171",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/171_foto_parlamentar",
+          "filename": "171_foto_parlamentar",
+          "height": "350",
+          "size": "45821",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Social Democrata",
+          "token": "PSD"
+        }
+      ],
+      "title": "Júnior Bocão",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/171_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/432",
+      "@type": "Vereador",
+      "description": "Jô Cavalcanti",
+      "dic_vereador": "270",
+      "id": "432",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/432_foto_parlamentar",
+          "filename": "432_foto_parlamentar",
+          "height": "350",
+          "size": "131080",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialismo e Leberdade",
+          "token": "PSOL"
+        }
+      ],
+      "title": "Jô Cavalcanti",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/432_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/415",
+      "@type": "Vereador",
+      "description": "José Lourenço de Sobral Neto",
+      "dic_vereador": "252",
+      "id": "415",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/415_foto_parlamentar",
+          "filename": "415_foto_parlamentar",
+          "height": "641",
+          "size": "31038",
+          "width": "640"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Zé Neto",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/415_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/433",
+      "@type": "Vereador",
+      "description": "Júnior de Cleto",
+      "dic_vereador": "271",
+      "id": "433",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/433_foto_parlamentar",
+          "filename": "433_foto_parlamentar",
+          "height": "350",
+          "size": "97523",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Júnior de Cleto",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/433_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/434",
+      "@type": "Vereador",
+      "description": "Kari Santos",
+      "dic_vereador": "272",
+      "id": "434",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/434_foto_parlamentar",
+          "filename": "434_foto_parlamentar",
+          "height": "350",
+          "size": "129087",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        }
+      ],
+      "title": "Kari Santos",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/434_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/406",
+      "@type": "Vereador",
+      "description": "Liana Cirne",
+      "dic_vereador": "243",
+      "id": "406",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/406_foto_parlamentar",
+          "filename": "406_foto_parlamentar",
+          "height": "350",
+          "size": "139492",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        }
+      ],
+      "title": "Liana Cirne",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/406_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/111",
+      "@type": "Vereador",
+      "description": "Luiz Eustáquio ",
+      "dic_vereador": "140",
+      "id": "111",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/111_foto_parlamentar",
+          "filename": "111_foto_parlamentar",
+          "height": "350",
+          "size": "187045",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Luiz Eustáquio",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/111_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/408",
+      "@type": "Vereador",
+      "description": "Marco Aurélio Filho",
+      "dic_vereador": "245",
+      "id": "408",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/408_foto_parlamentar",
+          "filename": "408_foto_parlamentar",
+          "height": "350",
+          "size": "159026",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Verde",
+          "token": "PV"
+        }
+      ],
+      "title": "Marco Aurélio Filho",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/408_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/164",
+      "@type": "Vereador",
+      "description": "Natália de Menudo",
+      "dic_vereador": "202",
+      "id": "164",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/164_foto_parlamentar",
+          "filename": "164_foto_parlamentar",
+          "height": "350",
+          "size": "218848",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Natália de Menudo",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/164_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/407",
+      "@type": "Vereador",
+      "description": "Paulo Muniz",
+      "dic_vereador": "244",
+      "id": "407",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/407_foto_parlamentar",
+          "filename": "407_foto_parlamentar",
+          "height": "350",
+          "size": "112378",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Liberal",
+          "token": "PL"
+        }
+      ],
+      "title": "Paulo Muniz",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/407_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/166",
+      "@type": "Vereador",
+      "description": "Rinaldo Júnior",
+      "dic_vereador": "204",
+      "id": "166",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/166_foto_parlamentar",
+          "filename": "166_foto_parlamentar",
+          "height": "894",
+          "size": "86341",
+          "width": "903"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Rinaldo Júnior",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/166_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/174",
+      "@type": "Vereador",
+      "description": "Rodrigo Coutinho",
+      "dic_vereador": "212",
+      "id": "174",
+      "image": [
+        {
+          "content-type": "image/jpeg",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/174_foto_parlamentar",
+          "filename": "174_foto_parlamentar",
+          "height": "1066",
+          "size": "190826",
+          "width": "1600"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Republicanos",
+          "token": "REP"
+        }
+      ],
+      "title": "Rodrigo Coutinho",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/174_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/160",
+      "@type": "Vereador",
+      "description": "Romero Jatobá Cavalcanti Neto",
+      "dic_vereador": "197",
+      "id": "160",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/160_foto_parlamentar",
+          "filename": "160_foto_parlamentar",
+          "height": "350",
+          "size": "122111",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Romerinho Jatobá",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/160_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/177",
+      "@type": "Vereador",
+      "description": "Samuel Salazar",
+      "dic_vereador": "233",
+      "id": "177",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/177_foto_parlamentar",
+          "filename": "177_foto_parlamentar",
+          "height": "350",
+          "size": "123447",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+          "token": "MDB"
+        }
+      ],
+      "title": "Samuel Salazar",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/177_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/409",
+      "@type": "Vereador",
+      "description": "Tadeu Calheiros",
+      "dic_vereador": "246",
+      "id": "409",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/409_foto_parlamentar",
+          "filename": "409_foto_parlamentar",
+          "height": "350",
+          "size": "140306",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+          "token": "MDB"
+        }
+      ],
+      "title": "Tadeu Calheiros",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/409_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/435",
+      "@type": "Vereador",
+      "description": "Thiago Medina",
+      "dic_vereador": "274",
+      "id": "435",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/435_foto_parlamentar",
+          "filename": "435_foto_parlamentar",
+          "height": "350",
+          "size": "114644",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Liberal",
+          "token": "PL"
+        }
+      ],
+      "title": "Thiago Medina",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/435_foto_parlamentar"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/158",
+      "@type": "Vereador",
+      "description": "Wilton Brito",
+      "dic_vereador": "195",
+      "id": "158",
+      "image": [],
+      "partido": [
+        {
+          "title": "Partido Socialista Brasileiro",
+          "token": "PSB"
+        }
+      ],
+      "title": "Wilton Brito",
+      "url_foto": "https://e-processo.recife.pe.leg.br/imagens/avatar.png"
+    }
+  ]
+}
