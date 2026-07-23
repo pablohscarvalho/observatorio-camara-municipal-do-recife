@@ -1,27 +1,56 @@
-// AQUI: Voltamos para o localhost para funcionar no seu computador.
-const API_BASE = "https://observatorio-camara-municipal-do-recife-1.onrender.com"; 
+const API_BASE =
+    window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
+        ? "http://127.0.0.1:8001"
+        : "https://observatorio-camara-municipal-do-recife-1.onrender.com";
 
 let chartSalarioInstance = null;
-let chartRaioXInstance = null;
 let chartPartidosInstance = null;
+let chartVerbaCategoriasInstance = null;
+let chartVerbaVereadorMesesInstance = null;
 
 let historicoSalarioGlobal = [];
 let vereadoresGlobal = [];
 let proposicoesVereadorGlobal = []; 
-let filtroPartidoAtual = null;      
+let filtroPartidoAtual = null;
+let filtroGrupoPoliticoAtual = null;
+let dadosVerbaDashboardGlobal = null;
+let verbaFiltroRequestId = 0;
+
+function normalizarTexto(valor) {
+    return String(valor || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toUpperCase();
+}
+
+function obterGrupoPolitico(nomePartido) {
+    const p = normalizarTexto(nomePartido);
+    if (p.includes("PSB") || p === "PT" || p.includes("PCDOB") || p.includes("PV") ||
+        p.includes("MDB") || p === "REP" || p.includes("REPUBLICANOS") || p.includes("AVANTE") ||
+        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("FEDERACAO")) {
+        return 'governo';
+    }
+    if (p.includes("PL") || p.includes("NOVO") || p.includes("PP") ||
+        p.includes("PODEMOS") || p.includes("PSD") || p.includes("PSOL")) {
+        return 'oposicao';
+    }
+    return 'neutro';
+}
 
 function obterCorDoPartido(nomePartido) {
-    const p = nomePartido.toUpperCase();
-    if (p.includes("PSB") || p === "PT" || p.includes("PCDOB") || p.includes("PV") || 
-        p.includes("MDB") || p.includes("REPUBLICANOS") || p.includes("AVANTE") || 
-        p.includes("PRD") || p.includes("PT, PCDOB, PV") || p.includes("REP")) {
-        return '#10b981'; 
-    }
-    if (p.includes("PL") || p.includes("NOVO") || p.includes("PP") || 
-        p.includes("PODEMOS") || p.includes("PSD") || p.includes("PSOL")) {
-        return '#f43f5e'; 
-    }
-    return '#94a3b8'; 
+    const grupo = obterGrupoPolitico(nomePartido);
+    if (grupo === 'governo') return '#10b981';
+    if (grupo === 'oposicao') return '#f43f5e';
+    return '#94a3b8';
+}
+
+function escaparHtml(valor) {
+    return String(valor ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
 }
 
 async function loadDashboard() {
@@ -37,8 +66,9 @@ async function loadDashboard() {
         document.getElementById('total-partidos').innerText = stats.vereadores?.partidos || 0;
 
         const dadosPartidos = stats.vereadores?.por_partido || {};
-        const labelsPartidos = Object.keys(dadosPartidos);
-        const dataPartidos = Object.values(dadosPartidos);
+        const partidosOrdenados = Object.entries(dadosPartidos).sort((a, b) => b[1] - a[1]);
+        const labelsPartidos = partidosOrdenados.map(([partido]) => partido);
+        const dataPartidos = partidosOrdenados.map(([, total]) => total);
         const backgroundColors = labelsPartidos.map(p => obterCorDoPartido(p));
 
         if (chartPartidosInstance) chartPartidosInstance.destroy();
@@ -51,12 +81,36 @@ async function loadDashboard() {
                     label: 'Qtd de Vereadores',
                     data: dataPartidos,
                     backgroundColor: backgroundColors,
-                    borderRadius: 4
+                    borderColor: backgroundColors,
+                    borderWidth: 1,
+                    borderRadius: 8,
+                    barThickness: 18
                 }]
             },
             options: { 
                 responsive: true, 
-                plugins: { legend: { display: false } },
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                layout: { padding: { right: 10 } },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => `${context.parsed.x} vereador(es)`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { precision: 0, color: '#64748b' },
+                        grid: { color: 'rgba(148, 163, 184, 0.2)' }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: '#334155', font: { weight: 700 } }
+                    }
+                },
                 onClick: (event, elements) => {
                     if (elements.length > 0) {
                         const index = elements[0].index;
@@ -66,6 +120,7 @@ async function loadDashboard() {
                             limparFiltroPartido();
                         } else {
                             filtroPartidoAtual = labelClicado;
+                            filtroGrupoPoliticoAtual = null;
                             renderizarGradeVereadores();
                         }
                     }
@@ -81,15 +136,218 @@ async function loadDashboard() {
             }
         } catch(e) { document.getElementById('total-verbas').innerText = "R$ 0,00"; }
 
-        carregarTiposProposicoes();
+        await carregarVerbaIndenizatoriaDashboard();
         await carregarVereadoresNaMemoria();
 
     } catch (error) { console.error("Erro fatal ao carregar dashboard:", error); }
 }
 
+async function carregarVerbaIndenizatoriaDashboard() {
+    const totalEl = document.getElementById('total-verba-indenizatoria');
+    const countEl = document.getElementById('verba-arquivos-count');
+    const periodoEl = document.getElementById('verba-periodo-geral');
+    const listaEl = document.getElementById('lista-verba-categorias');
+
+    if (!totalEl || !countEl || !listaEl) return;
+
+    try {
+        const res = await fetch(`${API_BASE}/stats/verba-indenizatoria?ano=2026`);
+        if (!res.ok) throw new Error('Resposta inválida ao carregar verba indenizatória.');
+        const dados = await res.json();
+        dadosVerbaDashboardGlobal = dados;
+        const categoriasComValor = (dados.categorias || []).filter(item => item.total > 0);
+
+        totalEl.innerText = formatarMoeda(dados.total || 0);
+        countEl.innerText = `${dados.vereadores_com_dados || 0} arquivos`;
+        if (periodoEl) periodoEl.innerText = "Soma dos valores pagos em verba indenizatória.";
+
+        renderizarListaCategoriasVerba(listaEl, categoriasComValor, false, dados.total || 0);
+        renderizarGraficoVerbaCategorias(categoriasComValor);
+    } catch (error) {
+        totalEl.innerText = "R$ 0,00";
+        countEl.innerText = "Erro";
+        listaEl.innerHTML = '<p class="texto-miudo">Não foi possível carregar a verba indenizatória.</p>';
+        if (chartVerbaCategoriasInstance) chartVerbaCategoriasInstance.destroy();
+    }
+}
+
+function renderizarResumoVerbaDashboard(dados, contexto = null) {
+    const totalEl = document.getElementById('total-verba-indenizatoria');
+    const countEl = document.getElementById('verba-arquivos-count');
+    const periodoEl = document.getElementById('verba-periodo-geral');
+    const listaEl = document.getElementById('lista-verba-categorias');
+
+    if (!totalEl || !countEl || !listaEl || !dados) return;
+
+    const categoriasComValor = (dados.categorias || []).filter(item => item.total > 0);
+    totalEl.innerText = formatarMoeda(dados.total || 0);
+    countEl.innerText = contexto
+        ? `${dados.vereadores_com_dados || 0} vereador(es)`
+        : `${dados.vereadores_com_dados || 0} arquivos`;
+
+    if (periodoEl) {
+        periodoEl.innerText = contexto
+            ? `Soma dos valores pagos em verba indenizatória - ${contexto}.`
+            : "Soma dos valores pagos em verba indenizatória.";
+    }
+
+    renderizarListaCategoriasVerba(listaEl, categoriasComValor, false, dados.total || 0);
+    renderizarGraficoVerbaCategorias(categoriasComValor);
+}
+
+function obterRotuloFiltroAtual() {
+    if (filtroPartidoAtual) return filtroPartidoAtual;
+    if (filtroGrupoPoliticoAtual === 'governo') return 'Base do Governo';
+    if (filtroGrupoPoliticoAtual === 'oposicao') return 'Oposição';
+    return null;
+}
+
+function obterVereadoresFiltrados() {
+    if (filtroPartidoAtual) {
+        return vereadoresGlobal.filter(v => v.partido === filtroPartidoAtual);
+    }
+    if (filtroGrupoPoliticoAtual) {
+        return vereadoresGlobal.filter(v => obterGrupoPolitico(v.partido || '') === filtroGrupoPoliticoAtual);
+    }
+    return vereadoresGlobal;
+}
+
+async function atualizarVerbaIndenizatoriaPorFiltro() {
+    if (!dadosVerbaDashboardGlobal) return;
+
+    const contexto = obterRotuloFiltroAtual();
+    if (!contexto) {
+        verbaFiltroRequestId += 1;
+        renderizarResumoVerbaDashboard(dadosVerbaDashboardGlobal);
+        return;
+    }
+
+    const requestId = ++verbaFiltroRequestId;
+    const totalEl = document.getElementById('total-verba-indenizatoria');
+    const countEl = document.getElementById('verba-arquivos-count');
+    const periodoEl = document.getElementById('verba-periodo-geral');
+    const listaEl = document.getElementById('lista-verba-categorias');
+
+    if (totalEl) totalEl.innerText = '...';
+    if (countEl) countEl.innerText = contexto;
+    if (periodoEl) periodoEl.innerText = `Recalculando verba indenizatória - ${contexto}.`;
+    if (listaEl) listaEl.innerHTML = '<p class="texto-miudo">Atualizando recorte selecionado...</p>';
+
+    const selecionados = obterVereadoresFiltrados();
+    const respostas = await Promise.all(selecionados.map(async (vereador) => {
+        try {
+            const res = await fetch(`${API_BASE}/vereadores/${vereador.id}/verba-indenizatoria?ano=2026&nome_vereador=${encodeURIComponent(vereador.nome)}`);
+            if (!res.ok) return null;
+            return await res.json();
+        } catch (error) {
+            return null;
+        }
+    }));
+
+    if (requestId !== verbaFiltroRequestId) return;
+
+    const categorias = {};
+    let total = 0;
+    let comDados = 0;
+
+    respostas.filter(Boolean).forEach(dados => {
+        total += dados.total || 0;
+        if ((dados.total || 0) > 0) comDados += 1;
+        (dados.categorias || []).forEach(item => {
+            categorias[item.categoria] = (categorias[item.categoria] || 0) + (item.total || 0);
+        });
+    });
+
+    renderizarResumoVerbaDashboard({
+        total,
+        vereadores_com_dados: comDados,
+        categorias: Object.entries(categorias)
+            .map(([categoria, valor]) => ({ categoria, total: valor }))
+            .sort((a, b) => b.total - a.total)
+    }, contexto);
+}
+
+function renderizarGraficoVerbaCategorias(categorias) {
+    const canvas = document.getElementById('chartVerbaCategorias');
+    if (!canvas) return;
+
+    const topCategorias = categorias.slice(0, 6);
+    const labelsCompletos = topCategorias.map(item => item.categoria);
+    const labelsCurtos = labelsCompletos.map(label => label.length > 34 ? `${label.slice(0, 31)}...` : label);
+    if (chartVerbaCategoriasInstance) chartVerbaCategoriasInstance.destroy();
+
+    chartVerbaCategoriasInstance = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: labelsCurtos,
+            datasets: [{
+                label: 'Valor pago',
+                data: topCategorias.map(item => item.total),
+                backgroundColor: '#f59e0b',
+                borderRadius: 4
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: (items) => labelsCompletos[items[0].dataIndex],
+                        label: (context) => formatarMoeda(context.parsed.x || 0)
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: (value) => formatarMoeda(value)
+                    }
+                },
+                y: {
+                    grid: { display: false },
+                    ticks: { font: { size: 11 }, color: '#475569' }
+                }
+            }
+        }
+    });
+}
+
+function renderizarListaCategoriasVerba(container, categorias, detalhada, totalReferencia = null) {
+    if (!container) return;
+
+    if (!categorias.length) {
+        container.innerHTML = '<p class="texto-miudo">Nenhum valor de verba indenizatória encontrado nos arquivos carregados.</p>';
+        return;
+    }
+
+    container.innerHTML = categorias.map(item => {
+        const percentual = totalReferencia ? ((item.total || 0) / totalReferencia) * 100 : null;
+        const valorResumo = percentual === null
+            ? formatarMoeda(item.total || 0)
+            : `${percentual.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}%`;
+        const meses = Object.entries(item.meses || {})
+            .filter(([, valor]) => valor > 0)
+            .map(([mes, valor]) => `<span class="verba-month-chip">${escaparHtml(mes)} ${formatarMoeda(valor)}</span>`)
+            .join('');
+
+        return `
+            <div class="verba-category-row">
+                <div>
+                    <strong>${escaparHtml(item.categoria)}</strong>
+                    ${detalhada && meses ? `<div class="verba-month-list">${meses}</div>` : ''}
+                </div>
+                <span>${valorResumo}</span>
+            </div>
+        `;
+    }).join('');
+}
+
 async function carregarTiposProposicoes() {
     try {
-        // Alterado de 2025 para 2026 para carregar os dados reais do seu print
         const res = await fetch(`${API_BASE}/proposicoes/tipos?ano=2026`);
         if (res.ok) {
             const data = await res.json();
@@ -100,7 +358,6 @@ async function carregarTiposProposicoes() {
                 data.tipos.forEach(item => { labels.push(item.tipo); values.push(item.count); });
 
                 if (labels.length > 0) {
-                    // Atualiza o título visualmente para bater com os dados de 2026
                     const headerTema = document.querySelector('#chartTemas').parentElement.previousElementSibling;
                     if(headerTema) headerTema.innerText = "Volume por Tipo de Matéria (2026)";
 
@@ -146,9 +403,16 @@ function renderizarGradeVereadores() {
         lista = vereadoresGlobal.filter(v => v.partido === filtroPartidoAtual);
         indicador.style.display = 'inline-block';
         nomeFiltro.innerText = filtroPartidoAtual;
+    } else if (filtroGrupoPoliticoAtual) {
+        lista = vereadoresGlobal.filter(v => obterGrupoPolitico(v.partido || '') === filtroGrupoPoliticoAtual);
+        indicador.style.display = 'inline-block';
+        nomeFiltro.innerText = obterRotuloFiltroAtual();
     } else {
         indicador.style.display = 'none';
     }
+
+    atualizarBotoesGrupoPolitico();
+    atualizarVerbaIndenizatoriaPorFiltro();
 
     if (lista.length === 0) {
         grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: #64748b; padding: 20px;">Nenhum vereador encontrado com este filtro.</p>';
@@ -157,11 +421,17 @@ function renderizarGradeVereadores() {
 
     lista.forEach(ver => {
         const card = document.createElement('div');
+        const status = ver.status_parlamentar;
         card.className = 'vereador-card';
         card.style.cursor = 'pointer'; 
         
         const fotoUrl = ver.fotografia || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(ver.nome) + '&background=random';
         const corPartido = obterCorDoPartido(ver.partido);
+        const tagStatus = status ? `
+            <span class="tag tag-suplente" title="${escaparHtml(status.observacao)}">
+                <i class="fas fa-user-clock"></i> ${escaparHtml(status.tag)}
+            </span>
+        ` : '';
         
         card.innerHTML = `
             <div style="text-align: center;">
@@ -170,6 +440,7 @@ function renderizarGradeVereadores() {
                 <span style="background-color: ${corPartido}20; color: ${corPartido}; border: 1px solid ${corPartido}; font-weight: bold; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; display: inline-block; margin-bottom: 12px;">
                     ${ver.partido}
                 </span>
+                <div class="status-tags">${tagStatus}</div>
             </div>
             <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.85rem; color: #64748b; text-align: left;">
                 <p style="margin: 4px 0;"><i class="fas fa-phone" style="width: 16px; color: #94a3b8;"></i> ${ver.telefone}</p>
@@ -184,7 +455,22 @@ function renderizarGradeVereadores() {
 
 function limparFiltroPartido() {
     filtroPartidoAtual = null;
+    filtroGrupoPoliticoAtual = null;
     renderizarGradeVereadores();
+}
+
+function filtrarGrupoPolitico(grupo) {
+    filtroPartidoAtual = null;
+    filtroGrupoPoliticoAtual = filtroGrupoPoliticoAtual === grupo ? null : grupo;
+    renderizarGradeVereadores();
+}
+
+function atualizarBotoesGrupoPolitico() {
+    document.querySelectorAll('[data-grupo-politico]').forEach(botao => {
+        const ativo = botao.dataset.grupoPolitico === filtroGrupoPoliticoAtual;
+        botao.classList.toggle('ativo', ativo);
+        botao.setAttribute('aria-pressed', ativo ? 'true' : 'false');
+    });
 }
 
 async function abrirPerfilVereador(vereador) {
@@ -197,6 +483,18 @@ async function abrirPerfilVereador(vereador) {
     document.getElementById('perfil-foto').src = fotoUrl;
     document.getElementById('perfil-nome').innerText = vereador.nome;
     document.getElementById('perfil-partido').innerText = vereador.partido || 'Sem Partido';
+    const statusPerfilExistente = document.getElementById('perfil-status-parlamentar');
+    if (statusPerfilExistente) statusPerfilExistente.remove();
+    if (vereador.status_parlamentar) {
+        const statusBox = document.createElement('div');
+        statusBox.id = 'perfil-status-parlamentar';
+        statusBox.className = 'perfil-status';
+        statusBox.innerHTML = `
+            <span class="tag tag-suplente"><i class="fas fa-user-clock"></i> ${escaparHtml(vereador.status_parlamentar.tag)}</span>
+            <p>${escaparHtml(vereador.status_parlamentar.observacao)}</p>
+        `;
+        document.querySelector('.perfil-info').appendChild(statusBox);
+    }
 
     const listaComissoes = document.getElementById('perfil-comissoes');
     if (vereador.comissoes && vereador.comissoes.length > 0) {
@@ -214,31 +512,45 @@ async function abrirPerfilVereador(vereador) {
         if(resProp.ok){
             const props = await resProp.json();
             document.getElementById('perfil-volume-prop').innerText = props.total || 0;
-            
             proposicoesVereadorGlobal = props.items || [];
-
-            if (chartRaioXInstance) { chartRaioXInstance.destroy(); }
-            const ctxRaioX = document.getElementById('chartRaioXProposicoes');
-            
-            if (ctxRaioX && props.resumo_tipos && Object.keys(props.resumo_tipos).length > 0) {
-                const tiposOrdenados = Object.entries(props.resumo_tipos).sort((a, b) => b[1] - a[1]);
-                const paletaCores = ['#3b82f6', '#8b5cf6', '#f43f5e', '#10b981', '#f59e0b', '#0ea5e9', '#6366f1'];
-
-                chartRaioXInstance = new Chart(ctxRaioX.getContext('2d'), {
-                    type: 'doughnut',
-                    data: {
-                        labels: tiposOrdenados.map(item => item[0]),
-                        datasets: [{ data: tiposOrdenados.map(item => item[1]), backgroundColor: paletaCores, borderWidth: 2, borderColor: '#ffffff' }]
-                    },
-                    options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { position: 'right' } } }
-                });
-                ctxRaioX.style.display = 'block';
-            } else if (ctxRaioX) { ctxRaioX.style.display = 'none'; }
             
             gerarBotoesFiltroProposicao();
             filtrarListaDeProposicoesNaTela('todos', null);
         }
     } catch(e) { document.getElementById('lista-proposicoes-detalhe').innerHTML = '<p style="color: red; text-align: center;">Erro de conexão.</p>'; }
+
+    // DADOS DE COMISSIONADOS
+    document.getElementById('total-custo-comissionados').innerText = '...';
+    document.getElementById('periodo-comissionados').innerText = 'Carregando...';
+    document.getElementById('lista-comissionados').innerHTML = '<li>Buscando equipe...</li>';
+
+    try {
+        const resCom = await fetch(`${API_BASE}/vereadores/${vereador.id}/comissionados?nome_vereador=${encodeURIComponent(vereador.nome)}`);
+        if (resCom.ok) {
+            const dados = await resCom.json();
+            document.getElementById('total-custo-comissionados').innerText = formatarMoeda(dados.total);
+            document.getElementById('periodo-comissionados').innerText = dados.periodo;
+
+            const lista = document.getElementById('lista-comissionados');
+            if (dados.servidores.length > 0) {
+                lista.innerHTML = dados.servidores.map(s => `
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f5f9;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600; font-size: 0.9rem; color: #1e293b;">${s.nome}</span>
+                            <span style="font-size: 0.75rem; color: #94a3b8;">${s.cargo}</span>
+                        </div>
+                        <span style="font-weight: bold; color: #10b981; font-size: 0.9rem;">${formatarMoeda(s.bruto)}</span>
+                    </li>
+                `).join('');
+            } else {
+                lista.innerHTML = '<li style="color: #94a3b8; font-size: 0.9rem;">Nenhum servidor identificado para este gabinete no mês atual.</li>';
+            }
+        }
+    } catch (e) {
+        document.getElementById('lista-comissionados').innerHTML = '<li style="color: red; font-size: 0.9rem;">Erro ao carregar dados dos comissionados.</li>';
+    }
+
+    await carregarVerbaIndenizatoriaVereador(vereador);
 
     document.getElementById('perfil-gasto-total').innerText = '...';
     document.getElementById('filtro-ano-salario').value = '2026'; 
@@ -250,6 +562,87 @@ async function abrirPerfilVereador(vereador) {
             renderizarGraficoSalario('2026'); 
         } else { historicoSalarioGlobal = []; renderizarGraficoSalario('2026'); }
     } catch(e) { historicoSalarioGlobal = []; renderizarGraficoSalario('2026'); }
+}
+
+async function carregarVerbaIndenizatoriaVereador(vereador) {
+    const totalEl = document.getElementById('total-verba-vereador');
+    const statusEl = document.getElementById('status-verba-vereador');
+    const periodoEl = document.getElementById('periodo-verba-vereador');
+    const listaEl = document.getElementById('lista-verba-vereador-categorias');
+    const canvas = document.getElementById('chartVerbaVereadorMeses');
+
+    if (!totalEl || !statusEl || !listaEl || !canvas) return;
+
+    totalEl.innerText = '...';
+    statusEl.innerText = 'Carregando dados de verba indenizatória...';
+    listaEl.innerHTML = '';
+    if (periodoEl) periodoEl.innerText = '2026';
+    if (chartVerbaVereadorMesesInstance) chartVerbaVereadorMesesInstance.destroy();
+
+    try {
+        const res = await fetch(`${API_BASE}/vereadores/${vereador.id}/verba-indenizatoria?ano=2026&nome_vereador=${encodeURIComponent(vereador.nome)}`);
+        if (!res.ok) throw new Error('Resposta inválida ao carregar verba do vereador.');
+        const dados = await res.json();
+        const categoriasComValor = (dados.categorias || []).filter(item => item.total > 0);
+
+        totalEl.innerText = formatarMoeda(dados.total || 0);
+        if (periodoEl) periodoEl.innerText = dados.ano || '2026';
+
+        if (!dados.total) {
+            statusEl.innerText = 'Nenhum CSV de verba indenizatória identificado para este parlamentar.';
+            listaEl.innerHTML = '<p class="texto-miudo">Os dados aparecerão aqui quando o arquivo correspondente for carregado.</p>';
+            return;
+        }
+
+        statusEl.innerText = `${(dados.arquivos || []).length} arquivo(s) vinculado(s) a este parlamentar.`;
+        renderizarGraficoVerbaVereadorMeses(dados.meses || []);
+        renderizarListaCategoriasVerba(listaEl, categoriasComValor, true);
+    } catch (error) {
+        totalEl.innerText = 'R$ 0,00';
+        statusEl.innerText = 'Não foi possível carregar a verba indenizatória deste parlamentar.';
+        listaEl.innerHTML = '';
+    }
+}
+
+function renderizarGraficoVerbaVereadorMeses(meses) {
+    const canvas = document.getElementById('chartVerbaVereadorMeses');
+    if (!canvas) return;
+
+    if (chartVerbaVereadorMesesInstance) chartVerbaVereadorMesesInstance.destroy();
+
+    chartVerbaVereadorMesesInstance = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: meses.map(item => item.mes),
+            datasets: [{
+                label: 'Verba indenizatória',
+                data: meses.map(item => item.total),
+                backgroundColor: '#f59e0b',
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => formatarMoeda(context.parsed.y || 0)
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: (value) => formatarMoeda(value)
+                    }
+                },
+                x: { grid: { display: false } }
+            }
+        }
+    });
 }
 
 function gerarBotoesFiltroProposicao() {
@@ -319,7 +712,6 @@ function renderizarGraficoSalario(anoFiltro) {
 
     const labels = dadosFiltrados.map(item => item.periodo);
     const dadosBrutos = dadosFiltrados.map(item => item.bruto);
-    const dadosLiquidos = dadosFiltrados.map(item => item.liquido);
 
     if (chartSalarioInstance) { chartSalarioInstance.destroy(); }
 
@@ -329,11 +721,10 @@ function renderizarGraficoSalario(anoFiltro) {
         data: {
             labels: labels,
             datasets: [
-                { label: 'Bruto (Total de Vantagens)', data: dadosBrutos, borderColor: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderWidth: 2, fill: true, tension: 0.3 },
-                { label: 'Valor Líquido Recebido', data: dadosLiquidos, borderColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.1)', borderWidth: 2, fill: true, tension: 0.3 }
+                { label: 'Salário bruto', data: dadosBrutos, borderColor: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.1)', borderWidth: 2, fill: true, tension: 0.3 }
             ]
         },
-        options: { responsive: true, interaction: { mode: 'index', intersect: false }, plugins: { legend: { position: 'top' } }, scales: { y: { beginAtZero: true } } }
+        options: { responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false }, plugins: { legend: { position: 'top' } }, scales: { y: { beginAtZero: true } } }
     });
 }
 
@@ -350,5 +741,9 @@ document.getElementById('btn-voltar').addEventListener('click', () => {
     document.getElementById('view-dashboard').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+window.limparFiltroPartido = limparFiltroPartido;
+window.filtrarGrupoPolitico = filtrarGrupoPolitico;
+window.filtrarListaDeProposicoesNaTela = filtrarListaDeProposicoesNaTela;
 
 document.addEventListener('DOMContentLoaded', loadDashboard);

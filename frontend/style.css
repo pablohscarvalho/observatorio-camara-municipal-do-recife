@@ -1,10 +1,15 @@
 :root {
-    --bg-color: #f8fafc;
+    --bg-color: #eef4fb;
     --card-bg: #ffffff;
     --primary: #3b82f6;
     --text-main: #334155;
     --text-muted: #94a3b8;
     --border: #e2e8f0;
+    --blue-soft: #eff6ff;
+    --amber-soft: #fff7ed;
+    --green-soft: #ecfdf5;
+    --purple-soft: #f5f3ff;
+    --cyan-soft: #ecfeff;
 }
 
 * {
@@ -15,7 +20,10 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background:
+        linear-gradient(0deg, #dbeafe 0%, #ecfdf5 34%, #fff7ed 68%, #f8fbff 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
     color: var(--text-main);
 }
 
@@ -26,18 +34,73 @@ body {
     width: 100%;
 }
 
-header {
+header,
+.app-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 15px;
+    padding: 8px 0 24px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    text-align: center;
 }
 
-.user-info {
-    color: var(--text-muted);
+.app-title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.app-title-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.app-title-line i {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563eb, #14b8a6);
+    color: white;
+    font-size: 1.55rem;
+    box-shadow: 0 12px 24px -16px rgba(37, 99, 235, 0.8);
+}
+
+.app-title-line h1 {
+    margin: 0;
+    color: #1e293b;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.app-subtitle {
+    color: #475569;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.app-author {
+    color: #64748b;
     font-size: 0.9rem;
+}
+
+.app-author a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.app-author a:hover {
+    text-decoration: underline;
 }
 
 .kpi-grid {
@@ -51,7 +114,7 @@ header {
     background: var(--card-bg);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 24px -18px rgba(15, 23, 42, 0.28);
     border: 1px solid var(--border);
 }
 
@@ -96,6 +159,234 @@ header {
     gap: 20px;
 }
 
+.partidos-card {
+    background:
+        linear-gradient(180deg, #f5f3ff 0%, rgba(255, 255, 255, 0.96) 58%);
+    border-color: #ddd6fe;
+    display: flex;
+    flex-direction: column;
+}
+
+.partidos-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.partidos-card-header h3 {
+    margin: 0;
+    border: none;
+    padding: 0;
+    color: #6d28d9;
+}
+
+.partidos-card-header p {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin-top: 6px;
+}
+
+.partidos-legenda {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 0.78rem;
+    color: #475569;
+}
+
+.partidos-legenda-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 999px;
+    padding: 5px 9px;
+    font-weight: 700;
+    color: #475569;
+    cursor: pointer;
+    font: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.partidos-legenda-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px -16px rgba(15, 23, 42, 0.35);
+}
+
+.partidos-legenda-btn.ativo {
+    border-color: currentColor;
+    background: white;
+}
+
+.partidos-legenda-btn[data-grupo-politico="governo"].ativo {
+    color: #047857;
+    background: #ecfdf5;
+}
+
+.partidos-legenda-btn[data-grupo-politico="oposicao"].ativo {
+    color: #be123c;
+    background: #fff1f2;
+}
+
+.legenda-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legenda-governo { background: #10b981; }
+.legenda-oposicao { background: #f43f5e; }
+
+.partidos-chart-wrap {
+    position: relative;
+    flex: 1;
+    min-height: 420px;
+    padding: 8px 4px 0;
+}
+
+.painel-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.painel-card-header h3 {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.verba-dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.verba-total-box {
+    border: 1px solid #fed7aa;
+    background: #fff7ed;
+    border-radius: 8px;
+    padding: 16px 18px;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.verba-total-box h2 {
+    color: #c2410c;
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    line-height: 1.08;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.verba-total-descricao {
+    color: #9a3412;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 360px;
+}
+
+.verba-chart-container {
+    position: relative;
+    height: 230px;
+    min-height: 230px;
+    min-width: 0;
+}
+
+.verba-category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    max-height: 230px;
+    overflow-y: auto;
+    padding-right: 6px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.verba-category-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 10px;
+    color: #475569;
+    font-size: 0.86rem;
+}
+
+.verba-category-row:first-child {
+    border-top: none;
+}
+
+.verba-category-row strong {
+    color: #334155;
+    font-size: 0.88rem;
+    line-height: 1.3;
+}
+
+.verba-category-row > span {
+    color: #c2410c;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.verba-perfil-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.7fr) minmax(320px, 1.3fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.verba-perfil-total {
+    border: 1px solid #fed7aa;
+    background: #fff7ed;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.verba-perfil-chart {
+    position: relative;
+    min-height: 230px;
+}
+
+.verba-category-list-detalhada {
+    max-height: 320px;
+}
+
+.verba-month-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.verba-month-chip {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    color: #64748b;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+
 .card h3 {
     margin-bottom: 15px;
     color: var(--text-main);
@@ -128,6 +419,31 @@ header {
     transition: transform 0.2s;
 }
 
+.status-tags {
+    min-height: 24px;
+    margin-bottom: 10px;
+}
+
+.tag-suplente {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+}
+
+.perfil-status {
+    margin-top: 10px;
+}
+
+.perfil-status p {
+    margin-top: 8px;
+    color: #92400e;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 .vereador-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -146,12 +462,79 @@ header {
 }
 .btn-voltar:hover { text-decoration: underline; }
 
+#view-vereador-detalhe[style*="block"] {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+    grid-template-areas:
+        "voltar voltar"
+        "parlamentar salario"
+        "verba gabinete"
+        "grafico grafico"
+        "comissoes proposicoes-resumo"
+        "materias materias";
+    gap: 20px;
+}
+
+#btn-voltar {
+    grid-area: voltar;
+    justify-self: flex-start;
+}
+
 .perfil-header {
+    grid-area: parlamentar;
+    background:
+        linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(255, 255, 255, 0.92)),
+        #ffffff;
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    min-height: 190px;
+    padding: 24px;
+    border-left: 5px solid var(--primary);
 }
+
+.perfil-metric-card:nth-child(3) {
+    background:
+        linear-gradient(135deg, #fff7ed 0%, #ffffff 72%);
+    border-color: #fed7aa;
+}
+
+.perfil-verba-card {
+    background:
+        linear-gradient(180deg, #fffaf2 0%, #ffffff 46%);
+    border-color: #fed7aa;
+}
+
+.perfil-comissionados-card {
+    background:
+        linear-gradient(180deg, #ecfdf5 0%, #ffffff 48%);
+    border-color: #bbf7d0;
+}
+
+.perfil-chart-card {
+    background:
+        linear-gradient(180deg, #eff6ff 0%, #ffffff 42%);
+    border-color: #bfdbfe;
+}
+
+.perfil-comissoes-card {
+    background:
+        linear-gradient(180deg, #f5f3ff 0%, #ffffff 55%);
+    border-color: #ddd6fe;
+}
+
+.perfil-kpi-grid > .perfil-metric-card:nth-child(2) {
+    background:
+        linear-gradient(180deg, #ecfeff 0%, #ffffff 55%);
+    border-color: #a5f3fc;
+}
+
+.perfil-proposicoes-card {
+    background:
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 38%);
+}
+
 #perfil-foto {
     width: 120px;
     height: 120px;
@@ -159,12 +542,156 @@ header {
     object-fit: cover;
     border: 4px solid var(--border);
 }
-.perfil-info h2 { font-size: 2rem; margin-bottom: 5px;}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.perfil-info h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 0;
+    color: #1e293b;
+}
 
 .perfil-kpi-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: contents;
+}
+
+.perfil-card,
+.perfil-chart-card,
+.perfil-comissionados-card,
+.perfil-verba-card,
+.perfil-proposicoes-card {
+    margin-bottom: 0;
+}
+
+.perfil-chart-card { grid-area: grafico; }
+.perfil-comissionados-card {
+    grid-area: gabinete;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-verba-card {
+    grid-area: verba;
+    align-self: start;
+}
+.perfil-proposicoes-card { grid-area: materias; }
+.perfil-kpi-grid > .perfil-comissoes-card { grid-area: comissoes; }
+.perfil-kpi-grid > .perfil-metric-card:nth-child(2) { grid-area: proposicoes-resumo; }
+.perfil-kpi-grid > .perfil-metric-card:nth-child(3) { grid-area: salario; }
+
+.perfil-card h3,
+.perfil-card-header h3 {
+    margin: 0;
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.perfil-header #perfil-partido {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.perfil-kpi-grid > .perfil-metric-card:nth-child(3) h3,
+.perfil-verba-card h3 {
+    color: #9a3412 !important;
+}
+
+.perfil-comissionados-card h3 {
+    color: #047857 !important;
+}
+
+.perfil-chart-card h3 {
+    color: #1d4ed8 !important;
+}
+
+.perfil-comissoes-card h3 {
+    color: #6d28d9 !important;
+}
+
+.perfil-kpi-grid > .perfil-metric-card:nth-child(2) h3 {
+    color: #0e7490;
+}
+
+.perfil-metric-card {
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-comissoes-card {
+    min-height: 190px;
+}
+
+.perfil-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.perfil-chart-area {
+    height: 230px;
+    width: 100%;
+}
+
+.perfil-chart-area canvas,
+.verba-perfil-chart canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.perfil-comissionados-card > div:nth-child(2) {
+    gap: 24px !important;
+    flex: 1;
+}
+
+.perfil-comissionados-card #total-custo-comissionados {
+    color: #059669;
+    font-size: 2.1rem !important;
+    margin-top: 6px !important;
+}
+
+.perfil-comissionados-card #periodo-comissionados {
+    background-color: #dcfce7;
+    color: #047857;
+}
+
+.perfil-verba-card #periodo-verba-vereador {
+    background-color: #ffedd5;
+    color: #c2410c;
+}
+
+.perfil-verba-card .verba-perfil-layout {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+}
+
+.perfil-verba-card .verba-perfil-chart {
+    min-height: 170px;
+}
+
+.perfil-verba-card .verba-category-list-detalhada {
+    max-height: 190px;
+}
+
+.filtros-proposicoes {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
 }
 
 .lista-simples { list-style: none; }
@@ -287,4 +814,79 @@ header {
 
 #chartPartidos {
     cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .content {
+        padding: 18px;
+    }
+
+    #view-vereador-detalhe[style*="block"] {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "voltar"
+            "parlamentar"
+            "salario"
+            "verba"
+            "gabinete"
+            "grafico"
+            "comissoes"
+            "proposicoes-resumo"
+            "materias";
+        gap: 14px;
+    }
+
+    .perfil-header {
+        align-items: flex-start;
+        gap: 16px;
+        min-height: auto;
+    }
+
+    #perfil-foto {
+        width: 88px;
+        height: 88px;
+    }
+
+    .perfil-info h2 {
+        font-size: 1.45rem;
+    }
+
+    .perfil-card-header {
+        align-items: flex-start;
+    }
+
+    .partidos-card-header {
+        flex-direction: column;
+    }
+
+    .partidos-legenda {
+        justify-content: flex-start;
+    }
+
+    .partidos-chart-wrap {
+        height: 360px;
+    }
+
+    .perfil-chart-area {
+        height: 230px;
+    }
+
+    .verba-dashboard-layout,
+    .verba-perfil-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .verba-total-box {
+        grid-template-columns: 1fr;
+    }
+
+    .verba-total-box h2 {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .verba-chart-container,
+    .verba-perfil-chart {
+        min-height: 240px;
+    }
 }

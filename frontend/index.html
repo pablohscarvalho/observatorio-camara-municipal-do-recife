@@ -11,19 +11,16 @@
 <body>
 
     <main class="content">
-        <header>
-            <div style="display: flex; flex-direction: column; gap: 5px;">
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <i class="fas fa-landmark" style="font-size: 2rem; color: var(--primary);"></i>
-                    <h1 style="margin: 0;">Observatório Casa de José Mariano - Recife</h1>
+        <header class="app-header">
+            <div class="app-title-wrap">
+                <div class="app-title-line">
+                    <i class="fas fa-landmark"></i>
+                    <h1>Observatório Casa de José Mariano</h1>
                 </div>
-                <span style="font-size: 0.9rem; color: #64748b; margin-left: 55px;">
-                    Produzido por <a href="https://instagram.com/pablohscarvalho" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: bold;">@pablohscarvalho</a>
+                <p class="app-subtitle">Recife</p>
+                <span class="app-author">
+                    Produzido por <a href="https://instagram.com/pablohscarvalho" target="_blank">@pablohscarvalho</a>
                 </span>
-            </div>
-            <div class="user-info">
-                <span>Atualizado Hoje</span>
-                <i class="fas fa-sync-alt" style="margin-left: 8px;"></i>
             </div>
         </header>
 
@@ -61,22 +58,40 @@
             </div>
 
             <div class="charts-grid">
-                <div class="card">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-                        <h3 style="margin: 0; border: none; padding: 0;">Distribuição Partidária</h3>
-                        <div style="display: flex; gap: 10px; font-size: 0.8rem;">
-                            <span style="display:flex; align-items:center; gap:4px;"><span style="width:10px;height:10px;background:#10b981;border-radius:50%;"></span> Base do Governo</span>
-                            <span style="display:flex; align-items:center; gap:4px;"><span style="width:10px;height:10px;background:#f43f5e;border-radius:50%;"></span> Oposição</span>
+                <div class="card partidos-card">
+                    <div class="partidos-card-header">
+                        <div>
+                            <h3><i class="fas fa-chart-bar"></i> Distribuição Partidária</h3>
+                            <p>Clique em uma barra para filtrar os vereadores.</p>
+                        </div>
+                        <div class="partidos-legenda">
+                            <button class="partidos-legenda-btn" type="button" data-grupo-politico="governo" onclick="filtrarGrupoPolitico('governo')">
+                                <i class="legenda-dot legenda-governo"></i> Base do Governo
+                            </button>
+                            <button class="partidos-legenda-btn" type="button" data-grupo-politico="oposicao" onclick="filtrarGrupoPolitico('oposicao')">
+                                <i class="legenda-dot legenda-oposicao"></i> Oposição
+                            </button>
                         </div>
                     </div>
-                    <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 15px;">Dica: Clique na barra de um partido para filtrar os vereadores abaixo.</p>
-                    <canvas id="chartPartidos"></canvas>
-                </div>
-                <div class="card">
-                    <h3>Volume por Tipo de Matéria (2025)</h3>
-                    <div class="chart-container" style="position: relative; height: 280px; width: 100%;">
-                        <canvas id="chartTemas"></canvas>
+                    <div class="partidos-chart-wrap">
+                        <canvas id="chartPartidos"></canvas>
                     </div>
+                </div>
+                <div class="card verba-dashboard-card">
+                    <div class="painel-card-header">
+                        <h3><i class="fas fa-receipt"></i> Verba Indenizatória (2026)</h3>
+                        <span id="verba-arquivos-count" class="tag">Carregando...</span>
+                    </div>
+                    <div class="verba-dashboard-layout">
+                        <div class="verba-total-box">
+                            <p id="verba-periodo-geral" class="verba-total-descricao">Soma dos valores pagos em verba indenizatória.</p>
+                            <h2 id="total-verba-indenizatoria">R$ 0,00</h2>
+                        </div>
+                        <div class="chart-container verba-chart-container">
+                            <canvas id="chartVerbaCategorias"></canvas>
+                        </div>
+                    </div>
+                    <div id="lista-verba-categorias" class="verba-category-list"></div>
                 </div>
             </div>
 
@@ -105,8 +120,8 @@
                 </div>
             </div>
 
-            <div class="card" style="margin-bottom: 20px; flex-direction: column; align-items: stretch;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <div class="card perfil-chart-card">
+                <div class="perfil-card-header">
                     <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;"><i class="fas fa-chart-line"></i> Evolução Salarial no Ano Vigente</h3>
                     <select id="filtro-ano-salario" class="filtro-select">
                         <option value="2026">2026 (Atual)</option>
@@ -115,28 +130,30 @@
                         <option value="todos">Todos os Anos</option>
                     </select>
                 </div>
-                <canvas id="chartSalario" height="80"></canvas>
+                <div class="perfil-chart-area">
+                    <canvas id="chartSalario"></canvas>
+                </div>
             </div>
 
-            <div class="perfil-kpi-grid" style="margin-bottom: 20px;">
-                <div class="card">
+            <div class="perfil-kpi-grid">
+                <div class="card perfil-card perfil-comissoes-card">
                     <h3><i class="fas fa-users"></i> Comissões Atuais</h3>
                     <ul id="perfil-comissoes" class="lista-simples lista-scroll"></ul>
                 </div>
-                <div class="card">
+                <div class="card perfil-card perfil-metric-card">
                     <h3><i class="fas fa-file-alt"></i> Proposições (2026)</h3>
                     <h2 id="perfil-volume-prop" class="destaque-azul">0</h2>
                     <p class="texto-miudo">Documentos protocolados</p>
                 </div>
-                <div class="card">
-                    <h3><i class="fas fa-wallet"></i> Salário Acumulado</h3>
+                <div class="card perfil-card perfil-metric-card">
+                    <h3><i class="fas fa-wallet"></i> Salário recebido</h3>
                     <h2 id="perfil-gasto-total" class="destaque-laranja">R$ 0,00</h2>
                     <p class="texto-miudo" id="label-gasto-total">Bruto no ano de 2026</p>
                 </div>
             </div>
 
-            <div class="card" style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <div class="card perfil-comissionados-card">
+                <div class="perfil-card-header">
                     <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;"><i class="fas fa-users-cog"></i> Custo Mensal de Comissionados no Gabinete</h3>
                     <span id="periodo-comissionados" class="tag">Mês/Ano</span>
                 </div>
@@ -158,12 +175,32 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div class="card perfil-verba-card" id="card-verba-indenizatoria">
+                <div class="perfil-card-header">
+                    <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;"><i class="fas fa-receipt"></i> Verba indenizatória recebida</h3>
+                    <span id="periodo-verba-vereador" class="tag">2026</span>
+                </div>
+
+                <div class="verba-perfil-layout">
+                    <div class="verba-perfil-total">
+                        <p class="texto-miudo">Total recebido nos arquivos carregados</p>
+                        <h2 id="total-verba-vereador" class="destaque-laranja">R$ 0,00</h2>
+                        <p id="status-verba-vereador" class="texto-miudo">Carregando dados de verba indenizatória...</p>
+                    </div>
+                    <div class="verba-perfil-chart">
+                        <canvas id="chartVerbaVereadorMeses"></canvas>
+                    </div>
+                </div>
+
+                <div id="lista-verba-vereador-categorias" class="verba-category-list verba-category-list-detalhada"></div>
+            </div>
+
+            <div class="card perfil-proposicoes-card">
+                <div class="perfil-card-header">
                     <h3 style="margin: 0; color: #64748b; font-size: 1.1rem;">Últimas Proposições e Matérias</h3>
                 </div>
                 
-                <div id="filtros-proposicoes" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--border);">
+                <div id="filtros-proposicoes" class="filtros-proposicoes">
                 </div>
 
                 <div id="lista-proposicoes-detalhe" class="lista-proposicoes-scroll">

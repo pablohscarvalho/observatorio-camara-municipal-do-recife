@@ -1,6 +1,6 @@
 {
   "total": 37,
-  "gerado_em": "2026-04-16T08:44:35.371086",
+  "gerado_em": "2026-07-10T11:04:34.235388",
   "items": [
     {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/145",
@@ -423,302 +423,6 @@
       ],
       "mesas": [],
       "telefone_gabinete": "3301-1220"
-    },
-    {
-      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/168",
-      "@type": "Vereador",
-      "description": "Alcides Teixeira Neto",
-      "dic_vereador": "206",
-      "id": "168",
-      "image": [
-        {
-          "content-type": "image/png",
-          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/168_foto_parlamentar",
-          "filename": "168_foto_parlamentar",
-          "height": "350",
-          "size": "193224",
-          "width": "350"
-        }
-      ],
-      "partido": [
-        {
-          "title": "AVANTE",
-          "token": "Avante"
-        }
-      ],
-      "title": "Alcides Teixeira Neto",
-      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/168_foto_parlamentar",
-      "biografia": "&lt;p&gt;Aos 43 anos em seu primeiro mandato, Alcides Teixeira Neto assume o legado dos seus av&amp;ocirc;s, o saudoso Deputado das vovozinhas Alcides Teixeira e o ex Vereador Edson de Oliveira herdando assim o gosto pela pol&amp;iacute;tica, o carisma e a vontade de ajudar as pessoas.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;As informa&amp;ccedil;&amp;otilde;es acima s&amp;atilde;o de responsabilidade do Gabinete do Vereador Alcides Teixeira Netos e foram atualizadas em 31 de Janeiro de 2017.&lt;/strong&gt;&lt;/p&gt;",
-      "birthday": "1973-06-24",
-      "cod_autor": "206",
-      "comissoes": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/53",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Meio Ambiente",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "53",
-          "mandato": "Titular",
-          "start": "2025-02-11",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/56",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Redação",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "56",
-          "mandato": "Suplente",
-          "start": "2025-02-11",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/64",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão da Defesa dos Direitos da Pessoa com Deficiência",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "64",
-          "mandato": "Suplente",
-          "start": "2025-02-11",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/56",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Redação",
-          "description": "09/01/2025 a 10/02/2025",
-          "end": "2025-02-10",
-          "id": "56",
-          "mandato": "Suplente",
-          "start": "2025-01-09",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/54",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Políticas Públicas da Juventude",
-          "description": "13/02/2023 a 31/12/2024",
-          "end": "2024-12-31",
-          "id": "54",
-          "mandato": "Titular",
-          "start": "2023-02-13",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/55",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Desenvolvimento Econômico",
-          "description": "13/02/2023 a 31/12/2024",
-          "end": "2024-12-31",
-          "id": "55",
-          "mandato": "Suplente",
-          "start": "2023-02-13",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/54",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Políticas Públicas da Juventude",
-          "description": "11/02/2021 a 31/12/2022",
-          "end": "2022-12-31",
-          "id": "54",
-          "mandato": "Titular",
-          "start": "2021-02-11",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/55",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Desenvolvimento Econômico",
-          "description": "11/02/2021 a 31/12/2022",
-          "end": "2022-12-31",
-          "id": "55",
-          "mandato": "Suplente",
-          "start": "2021-02-11",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "01/01/2019 a 31/12/2020",
-          "end": "2020-12-31",
-          "id": "50",
-          "mandato": "Titular",
-          "start": "2019-01-01",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/55",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Desenvolvimento Econômico",
-          "description": "09/05/2017 a 31/12/2018",
-          "end": "2018-12-31",
-          "id": "55",
-          "mandato": "Titular",
-          "start": "2017-05-09",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "09/05/2017 a 31/12/2018",
-          "end": "2018-12-31",
-          "id": "50",
-          "mandato": "Titular",
-          "start": "2017-05-09",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/42",
-          "@type": "ParticipanteComissao",
-          "comissao": "Finanças, Orçamento e Desenvolvimento Econômico-inativa",
-          "description": "06/02/2017 a 31/12/2018",
-          "end": "2018-12-31",
-          "id": "42",
-          "mandato": "Titular",
-          "start": "2017-02-06",
-          "title": "Presidente"
-        }
-      ],
-      "email": "alcidesteixeiraneto@hotmail.com",
-      "filiacoes": [
-        {
-          "data_desfiliacao": "",
-          "data_filiacao": "2024-03-13",
-          "filiacao_atual": true,
-          "title": "AVANTE",
-          "token": "Avante"
-        },
-        {
-          "data_desfiliacao": "2024-03-13",
-          "data_filiacao": "2019-09-03",
-          "filiacao_atual": false,
-          "title": "Partido Socialista Brasileiro",
-          "token": "PSB"
-        }
-      ],
-      "mandatos": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
-          "@type": "Mandato",
-          "end": "2028-12-31",
-          "id": 19,
-          "natureza": "Titular",
-          "start": "2025-01-01",
-          "votos": ""
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
-          "@type": "Mandato",
-          "end": "2024-12-31",
-          "id": 18,
-          "natureza": "Titular",
-          "start": "2021-01-01",
-          "votos": "8379"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/17",
-          "@type": "Mandato",
-          "end": "2020-12-31",
-          "id": 17,
-          "natureza": "Titular",
-          "start": "2017-01-01",
-          "votos": "6025"
-        }
-      ],
-      "mesas": [],
-      "telefone_gabinete": "(81) 3301-1275"
-    },
-    {
-      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/427",
-      "@type": "Vereador",
-      "description": "Alef Collins",
-      "dic_vereador": "265",
-      "id": "427",
-      "image": [
-        {
-          "content-type": "image/png",
-          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/427_foto_parlamentar",
-          "filename": "427_foto_parlamentar",
-          "height": "350",
-          "size": "94934",
-          "width": "350"
-        }
-      ],
-      "partido": [
-        {
-          "title": "Partido Progressista",
-          "token": "PP"
-        }
-      ],
-      "title": "Alef Collins",
-      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/427_foto_parlamentar",
-      "biografia": "&lt;p&gt;Estudante e crist&amp;atilde;o. Atualmente &amp;eacute; presidente do PP Jovem em Pernambuco e tem se destacado como um jovem l&amp;iacute;der que busca fortalecer pol&amp;iacute;ticas voltadas para a popula&amp;ccedil;&amp;atilde;o do Recife, com foco em educa&amp;ccedil;&amp;atilde;o, sa&amp;uacute;de, Direitos Humanos, empreendedorismo, emprego e preven&amp;ccedil;&amp;atilde;o &amp;agrave;s drogas. E para fortalecer pol&amp;iacute;ticas p&amp;uacute;blicas para as pessoas com defici&amp;ecirc;ncia, doen&amp;ccedil;as raras e aquelas que est&amp;atilde;o em situa&amp;ccedil;&amp;atilde;o de rua.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Desde os cinco anos participa, como comunicador, de programas de R&amp;aacute;dio e TV. Tem seguido os passos de seus pais, o deputado Estadual Pastor Cleiton Collins e a Mission&amp;aacute;ria Michele Collins, vereadora por tr&amp;ecirc;s mandatos e deputada federal. Onde tem seu exemplo de fam&amp;iacute;lia, amor a Cristo e ao pr&amp;oacute;ximo.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Com um cora&amp;ccedil;&amp;atilde;o generoso, que entende a dor do outro, tem feito diferen&amp;ccedil;a onde passa. Seus esfor&amp;ccedil;os e sua f&amp;eacute; crist&amp;atilde; s&amp;atilde;o partes fundamentais de sua miss&amp;atilde;o em prol das pessoas, em defesa da fam&amp;iacute;lia, da vida visando proporcionar oportunidades e direcionamento positivo para os recifenses.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;Eacute; di&amp;aacute;cono da Assembleia de Deus e sua f&amp;eacute; desempenha um papel importante em sua abordagem para a pol&amp;iacute;tica e para a promo&amp;ccedil;&amp;atilde;o do bem-estar de todos. Ele acredita que os valores crist&amp;atilde;os, a defesa da vida, da fam&amp;iacute;lia podem ser uma fonte de orienta&amp;ccedil;&amp;atilde;o e apoio para a popula&amp;ccedil;&amp;atilde;o, ajudando-os a tomar decis&amp;otilde;es s&amp;aacute;bias e respons&amp;aacute;veis em suas vidas.&lt;/p&gt;\r\n&lt;p&gt;Desde muito cedo desempenha um papel volunt&amp;aacute;rio nas Casas de Recupera&amp;ccedil;&amp;atilde;o, locais que fazem o acolhimento de pessoas que fazem uso abusivo de &amp;aacute;lcool e outras drogas. Faz um trabalho de resgate, onde busca pessoas em suas casas ou na rua para serem acolhidas. Tem tido um papel importante como um dos L&amp;iacute;deres do Minist&amp;eacute;rio Recuperando Vidas com Jesus, que tem a finalidade alcan&amp;ccedil;ar vidas por meio da evangeliza&amp;ccedil;&amp;atilde;o, do Litoral ao Sert&amp;atilde;o.&lt;/p&gt;\r\n&lt;p&gt;Atuou como assessor parlamentar e esteve &amp;agrave; frente da chefia de gabinete no Centro de Abastecimento e Log&amp;iacute;stica de Pernambuco (Ceasa), onde pode realizar a&amp;ccedil;&amp;otilde;es de combate &amp;agrave; fome junto a popula&amp;ccedil;&amp;atilde;o em vulnerabilidade social do Recife.&lt;/p&gt;\r\n&lt;p&gt;Biografia inserida em 26/02/2025&lt;/p&gt;",
-      "birthday": "2002-08-07",
-      "cod_autor": "265",
-      "comissoes": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/46",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Direitos Humanos e Cidadania",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "46",
-          "mandato": "Titular",
-          "start": "2025-02-11",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/43",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Saúde",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "43",
-          "mandato": "Suplente",
-          "start": "2025-02-11",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/54",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Políticas Públicas da Juventude",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "54",
-          "mandato": "Suplente",
-          "start": "2025-02-11",
-          "title": "Suplente"
-        }
-      ],
-      "email": "alef.collins@recife.pe.leg.br",
-      "filiacoes": [
-        {
-          "data_desfiliacao": "",
-          "data_filiacao": "2024-04-05",
-          "filiacao_atual": true,
-          "title": "Partido Progressista",
-          "token": "PP"
-        }
-      ],
-      "mandatos": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
-          "@type": "Mandato",
-          "end": "2028-12-31",
-          "id": 19,
-          "natureza": "Titular",
-          "start": "2025-01-01",
-          "votos": "0"
-        }
-      ],
-      "mesas": [],
-      "telefone_gabinete": "3301-1348"
     },
     {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/165",
@@ -2048,6 +1752,58 @@
       "telefone_gabinete": "(81) 3301-1340"
     },
     {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/437",
+      "@type": "Vereador",
+      "description": "Douglas Brito ",
+      "dic_vereador": "277",
+      "id": "437",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/437_foto_parlamentar",
+          "filename": "437_foto_parlamentar",
+          "height": "350",
+          "size": "139476",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "AVANTE",
+          "token": "Avante"
+        }
+      ],
+      "title": "Douglas Brito Ativista",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/437_foto_parlamentar",
+      "biografia": "&lt;p style=\"text-align: justify;\"&gt;Douglas Brito&amp;nbsp; &amp;eacute; Assistente Social, p&amp;oacute;s-graduado em Sa&amp;uacute;de P&amp;uacute;blica e da Fam&amp;iacute;lia com &amp;ecirc;nfase em Sanitarismo, ativista da causa animal, defensor do meio ambiente e agente pol&amp;iacute;tico pernambucano. Filho de Seu Galego e Dona Neide, construiu sua trajet&amp;oacute;ria pautada no compromisso com o servi&amp;ccedil;o p&amp;uacute;blico, na defesa da vida e na promo&amp;ccedil;&amp;atilde;o da justi&amp;ccedil;a social. Nascido e criado na comunidade do C&amp;oacute;rrego Jos&amp;eacute; Grande, no bairro da Bomba do Hemet&amp;eacute;rio, carrega na sua hist&amp;oacute;ria a viv&amp;ecirc;ncia das comunidades e a sensibilidade de quem conhece de perto os desafios enfrentados pela popula&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Reconhecido por sua atua&amp;ccedil;&amp;atilde;o firme em prol dos direitos dos animais, Douglas Brito tornou-se uma das principais vozes da causa animal em Pernambuco. Sua milit&amp;acirc;ncia &amp;eacute; marcada pelo combate aos maus-tratos, pelo fortalecimento das pol&amp;iacute;ticas p&amp;uacute;blicas de prote&amp;ccedil;&amp;atilde;o animal e pela conscientiza&amp;ccedil;&amp;atilde;o da sociedade sobre a import&amp;acirc;ncia do respeito a todas as formas de vida. Ao longo de sua caminhada, consolidou uma atua&amp;ccedil;&amp;atilde;o comprometida com o cuidado, a responsabilidade social e a defesa daqueles que n&amp;atilde;o t&amp;ecirc;m voz.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Sua trajet&amp;oacute;ria profissional e pol&amp;iacute;tica tamb&amp;eacute;m inclui passagens por importantes fun&amp;ccedil;&amp;otilde;es na administra&amp;ccedil;&amp;atilde;o p&amp;uacute;blica, como Superintendente de Administra&amp;ccedil;&amp;atilde;o da Secretaria de Sa&amp;uacute;de do Recife, Gerente de Rela&amp;ccedil;&amp;otilde;es Comunit&amp;aacute;rias da Prefeitura de Goiana e Vereador do Recife. Essas experi&amp;ecirc;ncias fortaleceram sua vis&amp;atilde;o de gest&amp;atilde;o, ampliaram sua proximidade com a popula&amp;ccedil;&amp;atilde;o e reafirmaram seu compromisso com a constru&amp;ccedil;&amp;atilde;o de pol&amp;iacute;ticas p&amp;uacute;blicas mais eficientes, humanas e voltadas para as reais necessidades da cidade.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Al&amp;eacute;m da defesa animal, Douglas Brito tamb&amp;eacute;m se destaca como defensor das causas sociais, da sa&amp;uacute;de p&amp;uacute;blica, da inclus&amp;atilde;o, da cidadania e da preserva&amp;ccedil;&amp;atilde;o ambiental. Sua atua&amp;ccedil;&amp;atilde;o parte da compreens&amp;atilde;o de que o desenvolvimento de uma sociedade justa depende da uni&amp;atilde;o entre responsabilidade social, sustentabilidade e respeito &amp;agrave; dignidade humana. Com di&amp;aacute;logo, coragem e sensibilidade, transformou sua paix&amp;atilde;o pelo cuidado em uma miss&amp;atilde;o de vida, dedicando-se diariamente &amp;agrave; luta por prote&amp;ccedil;&amp;atilde;o, igualdade e transforma&amp;ccedil;&amp;atilde;o social.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Movido pela convic&amp;ccedil;&amp;atilde;o de que a pol&amp;iacute;tica deve ser instrumento de mudan&amp;ccedil;a concreta na vida das pessoas, Douglas Brito segue dedicando sua vida p&amp;uacute;blica &amp;agrave; defesa dos interesses da popula&amp;ccedil;&amp;atilde;o, &amp;agrave; prote&amp;ccedil;&amp;atilde;o dos animais e &amp;agrave; promo&amp;ccedil;&amp;atilde;o de a&amp;ccedil;&amp;otilde;es que gerem impacto positivo nas comunidades. Sua hist&amp;oacute;ria &amp;eacute; marcada pela perseveran&amp;ccedil;a, pelo compromisso com o bem comum e pela certeza de que servir &amp;eacute; uma das formas mais nobres de transformar realidades.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Biografia inserida em 26 de Junho 2026&lt;/p&gt;",
+      "birthday": "1992-11-13",
+      "cod_autor": "277",
+      "comissoes": [],
+      "email": "",
+      "filiacoes": [
+        {
+          "data_desfiliacao": "",
+          "data_filiacao": "2024-04-03",
+          "filiacao_atual": true,
+          "title": "AVANTE",
+          "token": "Avante"
+        }
+      ],
+      "mandatos": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
+          "@type": "Mandato",
+          "end": "2026-10-23",
+          "id": 19,
+          "natureza": "Suplente",
+          "start": "2026-05-23",
+          "votos": "3741"
+        }
+      ],
+      "mesas": [],
+      "telefone_gabinete": ""
+    },
+    {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/429",
       "@type": "Vereador",
       "description": "Eduardo Moura",
@@ -3092,114 +2848,6 @@
         }
       ],
       "telefone_gabinete": "3301-1272"
-    },
-    {
-      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/430",
-      "@type": "Vereador",
-      "description": "Flávia de Nadegi",
-      "dic_vereador": "268",
-      "id": "430",
-      "image": [
-        {
-          "content-type": "image/png",
-          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/430_foto_parlamentar",
-          "filename": "430_foto_parlamentar",
-          "height": "350",
-          "size": "109290",
-          "width": "350"
-        }
-      ],
-      "partido": [
-        {
-          "title": "Partido Verde",
-          "token": "PV"
-        }
-      ],
-      "title": "Flávia de Nadegi",
-      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/430_foto_parlamentar",
-      "biografia": "",
-      "birthday": "1990-06-17",
-      "cod_autor": "268",
-      "comissoes": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/65",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão Especial sobre Parcelamento, Uso e Ocupação do Solo do Recife (LPUOS)",
-          "description": "02/06/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "65",
-          "mandato": "Titular",
-          "start": "2025-06-02",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/61",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão Mista para opinar sobre as contas do Poder Executivo",
-          "description": "12/03/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "61",
-          "mandato": "Suplente",
-          "start": "2025-03-12",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/43",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Saúde",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "43",
-          "mandato": "Titular",
-          "start": "2025-02-11",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "11/02/2025 a 31/12/2026",
-          "end": "2026-12-31",
-          "id": "50",
-          "mandato": "Suplente",
-          "start": "2025-02-11",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "09/01/2025 a 10/02/2025",
-          "end": "2025-02-10",
-          "id": "50",
-          "mandato": "Suplente",
-          "start": "2025-01-09",
-          "title": "Suplente"
-        }
-      ],
-      "email": "flaviadenadegi@recife.pe.leg.br",
-      "filiacoes": [
-        {
-          "data_desfiliacao": "",
-          "data_filiacao": "2024-04-05",
-          "filiacao_atual": true,
-          "title": "Partido Verde",
-          "token": "PV"
-        }
-      ],
-      "mandatos": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
-          "@type": "Mandato",
-          "end": "2028-12-31",
-          "id": 19,
-          "natureza": "Titular",
-          "start": "2025-01-01",
-          "votos": "0"
-        }
-      ],
-      "mesas": [],
-      "telefone_gabinete": "3301-1281"
     },
     {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/163",
@@ -4479,6 +4127,374 @@
       "telefone_gabinete": "(81) 3301-1282"
     },
     {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/130",
+      "@type": "Vereador",
+      "description": "Jairo Brito",
+      "dic_vereador": "165",
+      "id": "130",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/130_foto_parlamentar",
+          "filename": "130_foto_parlamentar",
+          "height": "350",
+          "size": "144668",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        }
+      ],
+      "title": "Jairo Britto",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/130_foto_parlamentar",
+      "biografia": "&lt;p&gt;Na elei&amp;ccedil;&amp;atilde;o de 2008, aos 47 anos, Jairo Xavier de Britto foi eleito para o seu primeiro mandato na C&amp;acirc;mara Municipal do Recife com 5.472 votos oriundos das mais diversas &amp;aacute;reas da cidade, desde as mais carentes &amp;agrave;s mais privilegiadas.&lt;/p&gt;\r\n&lt;p&gt;Por entender que a educa&amp;ccedil;&amp;atilde;o &amp;eacute; a base da transforma&amp;ccedil;&amp;atilde;o para a melhoria da qualidade de vida das pessoas, o recifense Jairo Britto entrou na pol&amp;iacute;tica partid&amp;aacute;ria em 2004 quando disputou, pela primeira vez, a elei&amp;ccedil;&amp;atilde;o para vereador do Recife, ficando na primeira supl&amp;ecirc;ncia do PSB com 2.432 votos.&lt;/p&gt;\r\n&lt;p&gt;Filho de Samuel e Geni Britto, foi criado no bairro do Cordeiro, onde reside at&amp;eacute; hoje. Sempre estudou em escolas p&amp;uacute;blicas. Concluiu bacharelado em Estat&amp;iacute;stica e Ci&amp;ecirc;ncias Cont&amp;aacute;beis na Universidade Federal de Pernambuco (UFPE). Fez p&amp;oacute;s-gradua&amp;ccedil;&amp;atilde;o em Supervis&amp;atilde;o Educacional e Per&amp;iacute;cia Criminal na Universidade de Pernambuco (UPE). Tem mestrado em Bioestat&amp;iacute;stica pela Universidade Federal Rural de Pernambuco (UFRPE).&lt;/p&gt;\r\n&lt;p&gt;&amp;Eacute; professor do Instituto Federal de Educa&amp;ccedil;&amp;atilde;o e Tecnologia, antigo CEFET, e atua como perito criminal da Pol&amp;iacute;cia Cient&amp;iacute;fica. Jairo Britto passou em v&amp;aacute;rios concursos p&amp;uacute;blicos como o da Sudene (primeiro lugar no concurso para estat&amp;iacute;stico), o do Governo do Estado para professor de t&amp;eacute;cnicas de contabilidade e administra&amp;ccedil;&amp;atilde;o (primeiro lugar), o da Funda&amp;ccedil;&amp;atilde;o&amp;nbsp;Hemope para estat&amp;iacute;stico (segundo lugar), o da Escola T&amp;eacute;cnica Federal de Pernambuco para professor de inform&amp;aacute;tica (terceiro lugar) e o do Tribunal Regional Federal para estat&amp;iacute;stico (quinto lugar).&lt;/p&gt;\r\n&lt;p&gt;Como professor, lecionou na UFPE e na Esurp (Escola Superior de Rela&amp;ccedil;&amp;otilde;es P&amp;uacute;blicas). Mesmo envolvido coma&amp;nbsp; vida acad&amp;ecirc;mica, assumiu ainda diversos cargos em defesa de sua classe trabalhadora, entre eles o de presidente da Associa&amp;ccedil;&amp;atilde;o de Peritos Criminais da Pol&amp;iacute;cia Cient&amp;iacute;fica de Pernambuco; de coordenador de planejamento e conselheiro fiscal da Associa&amp;ccedil;&amp;atilde;o dos Servidores do CEFET; e de conselheiro fiscal do Sindicato dos Servidores do CEFET. Atualmente, &amp;eacute; coordenador e professor de um curso preparat&amp;oacute;rio totalmente gratuito para concurso p&amp;uacute;blico, situado no bairro do Cordeiro.&lt;/p&gt;\r\n&lt;p&gt;Depois de toda a sua experi&amp;ecirc;ncia, ficou clara para o professor Jairo Britto a necessidade de entrar para a vida pol&amp;iacute;tica, no intuito de realizar algo ainda mais abrangente em prol da educa&amp;ccedil;&amp;atilde;o.&lt;/p&gt;\r\n&lt;p&gt;Orgulhoso de poder servir ao povo da cidade do Recife, o professor Jairo Britto est&amp;aacute; atento &amp;agrave;s necessidades da popula&amp;ccedil;&amp;atilde;o e j&amp;aacute; est&amp;aacute; implementando seus projetos. Os anos de trabalho em diversas institui&amp;ccedil;&amp;otilde;es de ensino e &amp;oacute;rg&amp;atilde;os p&amp;uacute;blicos deram a ele a experi&amp;ecirc;ncia necess&amp;aacute;ria para que afirme que muitos dos problemas enfrentados hoje podem ser sanados ou amenizados. Em sua opini&amp;atilde;o, basta vontade pol&amp;iacute;tica e aten&amp;ccedil;&amp;atilde;o &amp;agrave;s pessoas. \"Sem valorizar a educa&amp;ccedil;&amp;atilde;o e sem promover a justi&amp;ccedil;a e a inclus&amp;atilde;o social, n&amp;atilde;o h&amp;aacute; caminhos poss&amp;iacute;veis para sairmos da crise em que vivemos\", reflete.&lt;/p&gt;",
+      "birthday": "1961-02-11",
+      "cod_autor": "165",
+      "comissoes": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Finanças e Orçamento",
+          "description": "14/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "50",
+          "mandato": "Suplente",
+          "start": "2023-02-14",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/56",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Redação",
+          "description": "13/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "56",
+          "mandato": "Titular",
+          "start": "2023-02-13",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/56",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Redação",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "56",
+          "mandato": "Titular",
+          "start": "2021-02-11",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/61",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão Mista para opinar sobre as contas do Poder Executivo",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "61",
+          "mandato": "Suplente",
+          "start": "2021-02-11",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/31",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Educação, Cultura, Turismo e Esportes",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "31",
+          "mandato": "Suplente",
+          "start": "2021-02-11",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Finanças e Orçamento",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "50",
+          "mandato": "Suplente",
+          "start": "2021-02-11",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/54",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Políticas Públicas da Juventude",
+          "description": "01/01/2019 a 31/12/2020",
+          "end": "2020-12-31",
+          "id": "54",
+          "mandato": "Titular",
+          "start": "2019-01-01",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/45",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Acessibilidade e Mobilidade Urbana",
+          "description": "01/01/2019 a 31/12/2020",
+          "end": "2020-12-31",
+          "id": "45",
+          "mandato": "Suplente",
+          "start": "2019-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/45",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Acessibilidade e Mobilidade Urbana",
+          "description": "09/05/2017 a 31/12/2018",
+          "end": "2018-12-31",
+          "id": "45",
+          "mandato": "Titular",
+          "start": "2017-05-09",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/33",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão Executiva",
+          "description": "01/01/2017 a 31/12/2018",
+          "end": "2018-12-31",
+          "id": "33",
+          "mandato": "Titular",
+          "start": "2017-01-01",
+          "title": "3º Secretário"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/23",
+          "@type": "ParticipanteComissao",
+          "comissao": "Finanças e Orçamento-inativa",
+          "description": "01/01/2015 a 31/12/2016",
+          "end": "2016-12-31",
+          "id": "23",
+          "mandato": "Titular",
+          "start": "2015-01-01",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/29",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Pública-inativa",
+          "description": "01/01/2015 a 31/12/2016",
+          "end": "2016-12-31",
+          "id": "29",
+          "mandato": "Suplente",
+          "start": "2015-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/25",
+          "@type": "ParticipanteComissao",
+          "comissao": "Defesa dos Direitos Humanos, do Contribuinte e do Consumidor-inativa",
+          "description": "01/01/2015 a 31/12/2016",
+          "end": "2016-12-31",
+          "id": "25",
+          "mandato": "Suplente",
+          "start": "2015-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/29",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Pública-inativa",
+          "description": "20/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "29",
+          "mandato": "Suplente",
+          "start": "2013-02-20",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/32",
+          "@type": "ParticipanteComissao",
+          "comissao": "Higiene, Saúde e Bem Estar Social-inativa",
+          "description": "19/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "32",
+          "mandato": "Suplente",
+          "start": "2013-02-19",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/31",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Educação, Cultura, Turismo e Esportes",
+          "description": "09/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "31",
+          "mandato": "Suplente",
+          "start": "2013-02-09",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/23",
+          "@type": "ParticipanteComissao",
+          "comissao": "Finanças e Orçamento-inativa",
+          "description": "04/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "23",
+          "mandato": "Titular",
+          "start": "2013-02-04",
+          "title": "Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/25",
+          "@type": "ParticipanteComissao",
+          "comissao": "Defesa dos Direitos Humanos, do Contribuinte e do Consumidor-inativa",
+          "description": "04/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "25",
+          "mandato": "Suplente",
+          "start": "2013-02-04",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/29",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Pública-inativa",
+          "description": "04/01/2011 a 31/12/2012",
+          "end": "2012-12-31",
+          "id": "29",
+          "mandato": "Suplente",
+          "start": "2011-01-04",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/28",
+          "@type": "ParticipanteComissao",
+          "comissao": "Desenvolvimento Econômico-inativa",
+          "description": "01/01/2011 a 31/12/2012",
+          "end": "2012-12-31",
+          "id": "28",
+          "mandato": "Titular",
+          "start": "2011-01-01",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/30",
+          "@type": "ParticipanteComissao",
+          "comissao": "Ética Parlamentar-inativa",
+          "description": "28/03/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "30",
+          "mandato": "Titular",
+          "start": "2009-03-28",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/29",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Pública-inativa",
+          "description": "05/03/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "29",
+          "mandato": "Suplente",
+          "start": "2009-03-05",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/22",
+          "@type": "ParticipanteComissao",
+          "comissao": "Legislação e Justiça-inativa",
+          "description": "04/02/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "22",
+          "mandato": "Suplente",
+          "start": "2009-02-04",
+          "title": "Membro Efetivo"
+        }
+      ],
+      "email": "jairo.britto@bol.com.br",
+      "filiacoes": [
+        {
+          "data_desfiliacao": "",
+          "data_filiacao": "2011-10-05",
+          "filiacao_atual": true,
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        },
+        {
+          "data_desfiliacao": "2011-10-04",
+          "data_filiacao": "1911-11-11",
+          "filiacao_atual": false,
+          "title": "Partido Humanista da Solidariedade",
+          "token": "PHS"
+        }
+      ],
+      "mandatos": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
+          "@type": "Mandato",
+          "end": "2027-03-31",
+          "id": 19,
+          "natureza": "Suplente",
+          "start": "2026-05-16",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
+          "@type": "Mandato",
+          "end": "2024-12-31",
+          "id": 18,
+          "natureza": "Titular",
+          "start": "2021-01-01",
+          "votos": "6635"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/17",
+          "@type": "Mandato",
+          "end": "2020-12-31",
+          "id": 17,
+          "natureza": "Titular",
+          "start": "2017-01-01",
+          "votos": "7229"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/16",
+          "@type": "Mandato",
+          "end": "2016-12-31",
+          "id": 16,
+          "natureza": "Titular",
+          "start": "2013-01-01",
+          "votos": "11233"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/15",
+          "@type": "Mandato",
+          "end": "2012-12-31",
+          "id": 15,
+          "natureza": "Titular",
+          "start": "2009-01-01",
+          "votos": ""
+        }
+      ],
+      "mesas": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@mesas/21",
+          "@type": "ParticipanteMesa",
+          "description": "01/01/2018 a 31/12/2018",
+          "end": "2018-12-31",
+          "id": "21",
+          "start": "2018-01-01",
+          "title": "3º Secretário"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@mesas/20",
+          "@type": "ParticipanteMesa",
+          "description": "01/01/2017 a 31/12/2017",
+          "end": "2017-12-31",
+          "id": "20",
+          "start": "2017-01-01",
+          "title": "3º Secretário"
+        }
+      ],
+      "telefone_gabinete": "81 3301.1232/ 81 3301.1281"
+    },
+    {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/432",
       "@type": "Vereador",
       "description": "Jô Cavalcanti",
@@ -4853,7 +4869,7 @@
       ],
       "title": "Kari Santos",
       "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/434_foto_parlamentar",
-      "biografia": "&lt;p&gt;Kari Santos &amp;eacute; vereadora do Recife pelo Partido dos Trabalhadores (PT). Foi eleita em 2024 com 9.321 votos, tornando-se a mais jovem da hist&amp;oacute;ria do PT na cidade. Nascida e criada na periferia, no bairro da Mangueira, sua trajet&amp;oacute;ria &amp;eacute; marcada pela milit&amp;acirc;ncia no movimento estudantil e pela atua&amp;ccedil;&amp;atilde;o como comunicadora popular.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Kari representa uma nova gera&amp;ccedil;&amp;atilde;o de lideran&amp;ccedil;as pol&amp;iacute;ticas comprometidas com a defesa intransigente da classe trabalhadora, dos direitos das mulheres, da periferia, e dos direitos humanos.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;A participa&amp;ccedil;&amp;atilde;o popular &amp;eacute; a base de seu mandato para, atrav&amp;eacute;s da escuta, determinar a&amp;ccedil;&amp;otilde;es que traduzam a necessidade do povo.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Biografia atualizada em 03/09/2025.&lt;/p&gt;",
+      "biografia": "&lt;p style=\"text-align: justify;\"&gt;Kari Santos &amp;eacute; vereadora do Recife pelo Partido dos Trabalhadores (PT). Eleita em 2024 com 9.321 votos, tornou-se a vereadora mais jovem da hist&amp;oacute;ria do partido na capital pernambucana. Nascida e criada na periferia, no bairro da Mangueira, construiu sua trajet&amp;oacute;ria na milit&amp;acirc;ncia do movimento estudantil e na comunica&amp;ccedil;&amp;atilde;o popular, sempre ao lado das lutas do povo.&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Filha da escola p&amp;uacute;blica, ingressou no curso de Engenharia Civil da Universidade Federal de Pernambuco (UFPE) por meio da pol&amp;iacute;tica de cotas. Durante a gradua&amp;ccedil;&amp;atilde;o, viveu a experi&amp;ecirc;ncia que transformaria sua vida: a maternidade. Com o nascimento do filho, In&amp;aacute;cio &amp;mdash; nome escolhido em homenagem ao presidente Luiz In&amp;aacute;cio Lula da Silva, s&amp;iacute;mbolo de esperan&amp;ccedil;a e transforma&amp;ccedil;&amp;atilde;o para sua fam&amp;iacute;lia &amp;mdash;, Kari decidiu recome&amp;ccedil;ar sua trajet&amp;oacute;ria acad&amp;ecirc;mica. Trocou a Engenharia pela Pedagogia, tamb&amp;eacute;m na UFPE, curso pelo qual se apaixonou e que fortaleceu ainda mais seu compromisso com a educa&amp;ccedil;&amp;atilde;o p&amp;uacute;blica, a inclus&amp;atilde;o e a transforma&amp;ccedil;&amp;atilde;o da realidade por meio do conhecimento.&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Representante de uma nova gera&amp;ccedil;&amp;atilde;o de lideran&amp;ccedil;as pol&amp;iacute;ticas, Kari atua em defesa dos direitos das mulheres, da juventude perif&amp;eacute;rica, da educa&amp;ccedil;&amp;atilde;o p&amp;uacute;blica, da justi&amp;ccedil;a clim&amp;aacute;tica, da cultura, dos servidores p&amp;uacute;blicos e da classe trabalhadora. Seu mandato &amp;eacute; guiado pela participa&amp;ccedil;&amp;atilde;o popular, pelo compromisso com a redu&amp;ccedil;&amp;atilde;o das desigualdades e pela constru&amp;ccedil;&amp;atilde;o de uma cidade mais justa, democr&amp;aacute;tica e inclusiva para todas e todos.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Biografia atualizada em 26/06/2026.&lt;/p&gt;",
       "birthday": "1993-03-29",
       "cod_autor": "272",
       "comissoes": [
@@ -5459,141 +5475,6 @@
       "telefone_gabinete": " (81) 3301-1213"
     },
     {
-      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/408",
-      "@type": "Vereador",
-      "description": "Marco Aurélio Filho",
-      "dic_vereador": "245",
-      "id": "408",
-      "image": [
-        {
-          "content-type": "image/png",
-          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/408_foto_parlamentar",
-          "filename": "408_foto_parlamentar",
-          "height": "350",
-          "size": "159026",
-          "width": "350"
-        }
-      ],
-      "partido": [
-        {
-          "title": "Partido Verde",
-          "token": "PV"
-        }
-      ],
-      "title": "Marco Aurélio Filho",
-      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/408_foto_parlamentar",
-      "biografia": "&lt;div align=\"justify\"&gt;\r\n&lt;p&gt;Marco Aur&amp;eacute;lio Filho &amp;eacute; idealizador do movimento #SomosACidadeQueQueremos, que busca ouvir as comunidades, revitalizar os espa&amp;ccedil;os p&amp;uacute;blicos e despertar na popula&amp;ccedil;&amp;atilde;o o poder de pertencimento desses lugares. Como cidad&amp;atilde;o atuou em diversos setores da sociedade, sempre buscando ajudar o pr&amp;oacute;ximo e colaborar para o desenvolvimento da cidade. Tamb&amp;eacute;m &amp;eacute; fundador do Movimento #RespeitaMeuBrega que fomenta a valoriza&amp;ccedil;&amp;atilde;o do Movimento Brega e da cultura perif&amp;eacute;rica.&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;Marco Aur&amp;eacute;lio Filho foi eleito vereador da cidade do Recife em 2020. Em seu primeiro mandato na C&amp;acirc;mara Municipal do Recife tem se destacado pela sua atua&amp;ccedil;&amp;atilde;o em defesa dos direitos dos cidad&amp;atilde;os, especialmente das comunidades mais vulner&amp;aacute;veis. Tem focado em pautas como a valoriza&amp;ccedil;&amp;atilde;o da cultura popular e perif&amp;eacute;rica, a melhoria da infraestrutura urbana, a promo&amp;ccedil;&amp;atilde;o da seguran&amp;ccedil;a p&amp;uacute;blica e do desenvolvimento sustent&amp;aacute;vel, busca por mais investimentos em educa&amp;ccedil;&amp;atilde;o e sa&amp;uacute;de.&lt;/p&gt;\r\n&lt;p&gt;Na C&amp;acirc;mara, Marco &amp;eacute; presidente da Comiss&amp;atilde;o de Direitos Humanos e Cidadania; presidente da Comiss&amp;atilde;o Especial do Carnaval, S&amp;atilde;o Jo&amp;atilde;o e Grandes Eventos do Recife; e coordenador do Grupo de Trabalho de Preven&amp;ccedil;&amp;atilde;o &amp;agrave; Viol&amp;ecirc;ncia nas Escolas. Atualmente, tamb&amp;eacute;m &amp;eacute; Ouvidor da C&amp;acirc;mara Municipal do Recife.&lt;/p&gt;\r\n&lt;p&gt;CONTATOS:&lt;/p&gt;\r\n&lt;p&gt;Gabinete: C&amp;acirc;mara Municipal do Recife. Rua da Uni&amp;atilde;o, n&amp;ordm; 273, Anexo 1, 2&amp;ordm; andar. Boa Vista, Recife - PE.&lt;/p&gt;\r\n&lt;p&gt;Fone: 3301-1291/1248&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;E-mail: marcoaurelio.filho@recife.pe.leg.br | assessoriamarcoaureliofilho@gmail.com&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;o:OfficeDocumentSettings&gt;\r\n  &lt;o:AllowPNG&gt;&lt;/o:AllowPNG&gt;\r\n &lt;/o:OfficeDocumentSettings&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:WordDocument&gt;\r\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\r\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\r\n  &lt;w:TrackMoves&gt;&lt;/w:TrackMoves&gt;\r\n  &lt;w:TrackFormatting&gt;&lt;/w:TrackFormatting&gt;\r\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\r\n  &lt;w:PunctuationKerning&gt;&lt;/w:PunctuationKerning&gt;\r\n  &lt;w:ValidateAgainstSchemas&gt;&lt;/w:ValidateAgainstSchemas&gt;\r\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\r\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\r\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\r\n  &lt;w:DoNotPromoteQF&gt;&lt;/w:DoNotPromoteQF&gt;\r\n  &lt;w:LidThemeOther&gt;PT-BR&lt;/w:LidThemeOther&gt;\r\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\r\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\r\n  &lt;w:Compatibility&gt;\r\n   &lt;w:BreakWrappedTables&gt;&lt;/w:BreakWrappedTables&gt;\r\n   &lt;w:SnapToGridInCell&gt;&lt;/w:SnapToGridInCell&gt;\r\n   &lt;w:WrapTextWithPunct&gt;&lt;/w:WrapTextWithPunct&gt;\r\n   &lt;w:UseAsianBreakRules&gt;&lt;/w:UseAsianBreakRules&gt;\r\n   &lt;w:DontGrowAutofit&gt;&lt;/w:DontGrowAutofit&gt;\r\n   &lt;w:SplitPgBreakAndParaMark&gt;&lt;/w:SplitPgBreakAndParaMark&gt;\r\n   &lt;w:EnableOpenTypeKerning&gt;&lt;/w:EnableOpenTypeKerning&gt;\r\n   &lt;w:DontFlipMirrorIndents&gt;&lt;/w:DontFlipMirrorIndents&gt;\r\n   &lt;w:OverrideTableStyleHps&gt;&lt;/w:OverrideTableStyleHps&gt;\r\n  &lt;/w:Compatibility&gt;\r\n  &lt;m:mathPr&gt;\r\n   &lt;m:mathFont m:val=\"Cambria Math\"&gt;&lt;/m:mathFont&gt;\r\n   &lt;m:brkBin m:val=\"before\"&gt;&lt;/m:brkBin&gt;\r\n   &lt;m:brkBinSub m:val=\"--\"&gt;&lt;/m:brkBinSub&gt;\r\n   &lt;m:smallFrac m:val=\"off\"&gt;&lt;/m:smallFrac&gt;\r\n   &lt;m:dispDef&gt;&lt;/m:dispDef&gt;\r\n   &lt;m:lMargin m:val=\"0\"&gt;&lt;/m:lMargin&gt;\r\n   &lt;m:rMargin m:val=\"0\"&gt;&lt;/m:rMargin&gt;\r\n   &lt;m:defJc m:val=\"centerGroup\"&gt;&lt;/m:defJc&gt;\r\n   &lt;m:wrapIndent m:val=\"1440\"&gt;&lt;/m:wrapIndent&gt;\r\n   &lt;m:intLim m:val=\"subSup\"&gt;&lt;/m:intLim&gt;\r\n   &lt;m:naryLim m:val=\"undOvr\"&gt;&lt;/m:naryLim&gt;\r\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"267\"&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"&gt;&lt;/w:LsdException&gt;\r\n &lt;/w:LatentStyles&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 10]&gt;\r\n&lt;style&gt;\r\n /* Style Definitions */\r\n table.MsoNormalTable\r\n\t{mso-style-name:\"Tabela normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\r\n\tmso-para-margin-top:0cm;\r\n\tmso-para-margin-right:0cm;\r\n\tmso-para-margin-bottom:8.0pt;\r\n\tmso-para-margin-left:0cm;\r\n\tline-height:107%;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",\"sans-serif\";\r\n\tmso-ascii-font-family:Calibri;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-hansi-font-family:Calibri;\r\n\tmso-hansi-theme-font:minor-latin;\r\n\tmso-bidi-font-family:\"Times New Roman\";\r\n\tmso-bidi-theme-font:minor-bidi;\r\n\tmso-fareast-language:EN-US;}\r\n&lt;/style&gt;\r\n&lt;![endif]--&gt;",
-      "birthday": "2025-01-13",
-      "cod_autor": "245",
-      "comissoes": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "14/02/2023 a 31/12/2024",
-          "end": "2024-12-31",
-          "id": "50",
-          "mandato": "Titular",
-          "start": "2023-02-14",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/46",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Direitos Humanos e Cidadania",
-          "description": "13/02/2023 a 31/12/2024",
-          "end": "2024-12-31",
-          "id": "46",
-          "mandato": "Titular",
-          "start": "2023-02-13",
-          "title": "Presidente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/48",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Ética e Decoro Parlamentar",
-          "description": "13/02/2023 a 31/12/2024",
-          "end": "2024-12-31",
-          "id": "48",
-          "mandato": "Suplente",
-          "start": "2023-02-13",
-          "title": "Suplente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Finanças e Orçamento",
-          "description": "04/11/2021 a 31/12/2022",
-          "end": "2022-12-31",
-          "id": "50",
-          "mandato": "Titular",
-          "start": "2021-11-04",
-          "title": "Vice-Presidente"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/61",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão Mista para opinar sobre as contas do Poder Executivo",
-          "description": "11/02/2021 a 31/12/2022",
-          "end": "2022-12-31",
-          "id": "61",
-          "mandato": "Titular",
-          "start": "2021-02-11",
-          "title": "Membro Efetivo"
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/48",
-          "@type": "ParticipanteComissao",
-          "comissao": "Comissão de Ética e Decoro Parlamentar",
-          "description": "11/02/2021 a 31/12/2022",
-          "end": "2022-12-31",
-          "id": "48",
-          "mandato": "Suplente",
-          "start": "2021-02-11",
-          "title": "Suplente"
-        }
-      ],
-      "email": "",
-      "filiacoes": [
-        {
-          "data_desfiliacao": "",
-          "data_filiacao": "2024-03-20",
-          "filiacao_atual": true,
-          "title": "Partido Verde",
-          "token": "PV"
-        },
-        {
-          "data_desfiliacao": "2024-03-07",
-          "data_filiacao": "1900-01-01",
-          "filiacao_atual": false,
-          "title": "Partido Renovador Trabalhista Brasileiro",
-          "token": "PRTB"
-        }
-      ],
-      "mandatos": [
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
-          "@type": "Mandato",
-          "end": "2028-12-31",
-          "id": 19,
-          "natureza": "Titular",
-          "start": "2025-01-01",
-          "votos": ""
-        },
-        {
-          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
-          "@type": "Mandato",
-          "end": "2024-12-31",
-          "id": 18,
-          "natureza": "Titular",
-          "start": "2021-01-01",
-          "votos": "5810"
-        }
-      ],
-      "mesas": [],
-      "telefone_gabinete": ""
-    },
-    {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/164",
       "@type": "Vereador",
       "description": "Natália de Menudo",
@@ -5887,6 +5768,409 @@
         }
       ],
       "telefone_gabinete": "(81) 3301-1325"
+    },
+    {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/42",
+      "@type": "Vereador",
+      "description": "Osmar Ricardo Cabral Barreto",
+      "dic_vereador": "35",
+      "id": "42",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/42_foto_parlamentar",
+          "filename": "42_foto_parlamentar",
+          "height": "350",
+          "size": "90401",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        }
+      ],
+      "title": "Osmar Ricardo",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/42_foto_parlamentar",
+      "biografia": "&lt;p style=\"text-align: justify; box-sizing: border-box; margin: 0px 0px 10px; color: #505050;\"&gt;Recifense, o vereador Osmar Ricardo iniciou cedo sua milit&amp;acirc;ncia pol&amp;iacute;tica, atuando junto ao movimento popular no Bairro de Santo Amaro. Consciente das transforma&amp;ccedil;&amp;otilde;es pol&amp;iacute;ticas que se processavam no Brasil na d&amp;eacute;cada de 80, participou da primeira Comiss&amp;atilde;o Provis&amp;oacute;ria para a funda&amp;ccedil;&amp;atilde;o do Partido dos Trabalhadores no Recife, do qual foi dirigente.&lt;/p&gt;\r\n&lt;p style=\"text-align: justify; box-sizing: border-box; margin: 0px 0px 10px; color: #505050;\"&gt;Osmar &amp;eacute; servidor p&amp;uacute;blico municipal da URB e presidente do Sindicato dos/as Servidores/as da Prefeitura do Recife (SINDSEPRE). Com muita luta, desde 1997, o Sindicato garantiu in&amp;uacute;meras conquistas econ&amp;ocirc;micas e de condi&amp;ccedil;&amp;otilde;es de trabalho para a categoria, al&amp;eacute;m da oferta de v&amp;aacute;rios servi&amp;ccedil;os como Cl&amp;iacute;nica de Sa&amp;uacute;de, Clube de Campo, sede pr&amp;oacute;pria e diversos conv&amp;ecirc;nios.&lt;/p&gt;\r\n&lt;p style=\"text-align: justify; box-sizing: border-box; margin: 0px 0px 10px; color: #505050;\"&gt;Possui in&amp;uacute;meros projetos apresentados, alguns em tramita&amp;ccedil;&amp;atilde;o, outros j&amp;aacute; aprovados e transformados em lei. Em seu quinto mandato na C&amp;acirc;mara Municipal do Recife, continuar&amp;aacute; participando ativamente das atividades da Casa, com voz ativa no Plen&amp;aacute;rio, atuando junto aos Conselhos Municipais e Comiss&amp;otilde;es.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify; box-sizing: border-box; margin: 0px 0px 10px; color: #505050;\"&gt;Na elabora&amp;ccedil;&amp;atilde;o de leis, continuaremos as a&amp;ccedil;&amp;otilde;es do mandato popular, construindo as propostas, ouvindo os movimentos populares, sociais e sindicais. Vamos fiscalizar as a&amp;ccedil;&amp;otilde;es do Executivo e garantir que o Recife seja uma cidade mais segura, sustent&amp;aacute;vel, com transporte, educa&amp;ccedil;&amp;atilde;o e qualidade de vida para todos e todas.&lt;/p&gt;\r\n&lt;div style=\"box-sizing: border-box; color: #505050;\" align=\"justify\"&gt;Biografia Parlamentar inserida em 11/03/2021.&lt;/div&gt;\r\n&lt;p style=\"text-align: justify; box-sizing: border-box; margin: 0px 0px 10px; color: #505050;\"&gt;As informa&amp;ccedil;&amp;otilde;es acima s&amp;atilde;o de responsabilidade da assessoria de comunica&amp;ccedil;&amp;atilde;o do Vereador Osmar Ricardo&lt;/p&gt;",
+      "birthday": "1966-04-08",
+      "cod_autor": "35",
+      "comissoes": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/53",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Meio Ambiente",
+          "description": "11/02/2025 a 31/12/2026",
+          "end": "2026-12-31",
+          "id": "53",
+          "mandato": "Titular",
+          "start": "2025-02-11",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/60",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Igualdade Racial e Enfrentamento ao Racismo",
+          "description": "11/02/2025 a 31/12/2026",
+          "end": "2026-12-31",
+          "id": "60",
+          "mandato": "Suplente",
+          "start": "2025-02-11",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Finanças e Orçamento",
+          "description": "09/01/2025 a 10/02/2025",
+          "end": "2025-02-10",
+          "id": "50",
+          "mandato": "Titular",
+          "start": "2025-01-09",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Finanças e Orçamento",
+          "description": "14/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "50",
+          "mandato": "Titular",
+          "start": "2023-02-14",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/60",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Igualdade Racial e Enfrentamento ao Racismo",
+          "description": "13/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "60",
+          "mandato": "Titular",
+          "start": "2023-02-13",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/48",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Ética e Decoro Parlamentar",
+          "description": "13/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "48",
+          "mandato": "Suplente",
+          "start": "2023-02-13",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/47",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Cidadã",
+          "description": "13/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "47",
+          "mandato": "Suplente",
+          "start": "2023-02-13",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/60",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Igualdade Racial e Enfrentamento ao Racismo",
+          "description": "10/06/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "60",
+          "mandato": "Titular",
+          "start": "2021-06-10",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/50",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Finanças e Orçamento",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "50",
+          "mandato": "Titular",
+          "start": "2021-02-11",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/61",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão Mista para opinar sobre as contas do Poder Executivo",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "61",
+          "mandato": "Titular",
+          "start": "2021-02-11",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/48",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Ética e Decoro Parlamentar",
+          "description": "11/02/2021 a 31/12/2022",
+          "end": "2022-12-31",
+          "id": "48",
+          "mandato": "Suplente",
+          "start": "2021-02-11",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/29",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Segurança Pública-inativa",
+          "description": "01/01/2015 a 31/12/2016",
+          "end": "2016-12-31",
+          "id": "29",
+          "mandato": "Titular",
+          "start": "2015-01-01",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/25",
+          "@type": "ParticipanteComissao",
+          "comissao": "Defesa dos Direitos Humanos, do Contribuinte e do Consumidor-inativa",
+          "description": "01/01/2015 a 31/12/2016",
+          "end": "2016-12-31",
+          "id": "25",
+          "mandato": "Suplente",
+          "start": "2015-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/30",
+          "@type": "ParticipanteComissao",
+          "comissao": "Ética Parlamentar-inativa",
+          "description": "25/12/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "30",
+          "mandato": "Titular",
+          "start": "2013-12-25",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/23",
+          "@type": "ParticipanteComissao",
+          "comissao": "Finanças e Orçamento-inativa",
+          "description": "04/12/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "23",
+          "mandato": "Suplente",
+          "start": "2013-12-04",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/36",
+          "@type": "ParticipanteComissao",
+          "comissao": "Especial de Revisão do Regimento Interno-inativa",
+          "description": "08/10/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "36",
+          "mandato": "Titular",
+          "start": "2013-10-08",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/24",
+          "@type": "ParticipanteComissao",
+          "comissao": "Obras e Planejamento Urbano-inativa",
+          "description": "06/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "24",
+          "mandato": "Titular",
+          "start": "2013-02-06",
+          "title": "Vice-Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/25",
+          "@type": "ParticipanteComissao",
+          "comissao": "Defesa dos Direitos Humanos, do Contribuinte e do Consumidor-inativa",
+          "description": "04/02/2013 a 31/12/2014",
+          "end": "2014-12-31",
+          "id": "25",
+          "mandato": "Suplente",
+          "start": "2013-02-04",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/24",
+          "@type": "ParticipanteComissao",
+          "comissao": "Obras e Planejamento Urbano-inativa",
+          "description": "01/01/2011 a 31/12/2012",
+          "end": "2012-12-31",
+          "id": "24",
+          "mandato": "Titular",
+          "start": "2011-01-01",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/31",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Educação, Cultura, Turismo e Esportes",
+          "description": "01/01/2011 a 31/12/2012",
+          "end": "2012-12-31",
+          "id": "31",
+          "mandato": "Suplente",
+          "start": "2011-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/26",
+          "@type": "ParticipanteComissao",
+          "comissao": "Meio Ambiente, Transporte e Trânsito-inativa",
+          "description": "01/01/2011 a 31/12/2012",
+          "end": "2012-12-31",
+          "id": "26",
+          "mandato": "Suplente",
+          "start": "2011-01-01",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/23",
+          "@type": "ParticipanteComissao",
+          "comissao": "Finanças e Orçamento-inativa",
+          "description": "05/03/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "23",
+          "mandato": "Suplente",
+          "start": "2009-03-05",
+          "title": "Membro Efetivo"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/24",
+          "@type": "ParticipanteComissao",
+          "comissao": "Obras e Planejamento Urbano-inativa",
+          "description": "05/03/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "24",
+          "mandato": "Suplente",
+          "start": "2009-03-05",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/32",
+          "@type": "ParticipanteComissao",
+          "comissao": "Higiene, Saúde e Bem Estar Social-inativa",
+          "description": "21/02/2009 a 31/12/2010",
+          "end": "2010-12-31",
+          "id": "32",
+          "mandato": "Suplente",
+          "start": "2009-02-21",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/28",
+          "@type": "ParticipanteComissao",
+          "comissao": "Desenvolvimento Econômico-inativa",
+          "description": "01/02/2007 a 31/12/2008",
+          "end": "2008-12-31",
+          "id": "28",
+          "mandato": "Titular",
+          "start": "2007-02-01",
+          "title": "Presidente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/24",
+          "@type": "ParticipanteComissao",
+          "comissao": "Obras e Planejamento Urbano-inativa",
+          "description": "01/02/2007 a 31/12/2008",
+          "end": "2008-12-31",
+          "id": "24",
+          "mandato": "Titular",
+          "start": "2007-02-01",
+          "title": "Vice-Presidente"
+        }
+      ],
+      "email": "osmar.ricardo@recife.pe.leg.br",
+      "filiacoes": [
+        {
+          "data_desfiliacao": "",
+          "data_filiacao": "1991-08-09",
+          "filiacao_atual": true,
+          "title": "Partido dos Trabalhadores",
+          "token": "PT"
+        }
+      ],
+      "mandatos": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
+          "@type": "Mandato",
+          "end": "2028-12-31",
+          "id": 19,
+          "natureza": "Suplente",
+          "start": "2026-05-05",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
+          "@type": "Mandato",
+          "end": "2026-03-02",
+          "id": 19,
+          "natureza": "Suplente",
+          "start": "2025-01-02",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
+          "@type": "Mandato",
+          "end": "2024-12-31",
+          "id": 18,
+          "natureza": "Titular",
+          "start": "2021-01-01",
+          "votos": "5838"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/16",
+          "@type": "Mandato",
+          "end": "2016-12-31",
+          "id": 16,
+          "natureza": "Titular",
+          "start": "2013-01-01",
+          "votos": "8714"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/15",
+          "@type": "Mandato",
+          "end": "2012-12-31",
+          "id": 15,
+          "natureza": "Titular",
+          "start": "2009-01-01",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/14",
+          "@type": "Mandato",
+          "end": "2008-12-31",
+          "id": 14,
+          "natureza": "Titular",
+          "start": "2005-01-01",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/13",
+          "@type": "Mandato",
+          "end": "2004-12-31",
+          "id": 13,
+          "natureza": "Titular",
+          "start": "2001-01-01",
+          "votos": ""
+        }
+      ],
+      "mesas": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@mesas/28",
+          "@type": "ParticipanteMesa",
+          "description": "01/01/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "28",
+          "start": "2023-01-01",
+          "title": "2º Suplente"
+        }
+      ],
+      "telefone_gabinete": "81 33011337"
     },
     {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/407",
@@ -6791,6 +7075,106 @@
       "telefone_gabinete": "(81) 3301-1360"
     },
     {
+      "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/422",
+      "@type": "Vereador",
+      "description": "Ronaldo Lopes",
+      "dic_vereador": "259",
+      "id": "422",
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/422_foto_parlamentar",
+          "filename": "422_foto_parlamentar",
+          "height": "350",
+          "size": "79749",
+          "width": "350"
+        }
+      ],
+      "partido": [
+        {
+          "title": "Partido Progressista",
+          "token": "PP"
+        }
+      ],
+      "title": "Ronaldo Lopes",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/422_foto_parlamentar",
+      "biografia": "&lt;p style=\"text-align: justify;\"&gt;Ronaldo Lopes da Silva, nascido em 1&amp;ordm; de mar&amp;ccedil;o de 1987 &amp;eacute; natural do Recife, casado, pai de Ana Sophia e crist&amp;atilde;o. Possui e cultiva ra&amp;iacute;zes de origem comunit&amp;aacute;rias que sempre foram a base das suas lutas, defendendo e fortalecendo os interesses da popula&amp;ccedil;&amp;atilde;o, principalmente a perif&amp;eacute;rica. Radialista de Profiss&amp;atilde;o, sempre buscou atuar como representante nos movimentos estudantis e comunit&amp;aacute;rios, estando em contato com a pol&amp;iacute;tica diariamente. Vindo de origem humilde, ele nunca abaixou a cabe&amp;ccedil;a em meio a situa&amp;ccedil;&amp;otilde;es adversas que a vida proporciona, sempre batalhou pelos seus sonhos e isso aumentou sua vontade de fazer mais. Sua m&amp;atilde;e, V&amp;acirc;nia Ferreira, era vendedora de temperos nos mercados p&amp;uacute;blicos da Cidade, e seu pai, Mario Lopes, foi cortador de cana no interior de Rio Grande do Norte e que anos depois, veio para Recife, buscando melhorias de vida. Aqui, o Sr. Mario terminou sua trajet&amp;oacute;ria profissional trabalhando em uma das grandes empresa de telecomunica&amp;ccedil;&amp;otilde;es do Brasil.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;A chegada de Ronaldo at&amp;eacute; a pol&amp;iacute;tica n&amp;atilde;o foi f&amp;aacute;cil, ap&amp;oacute;s perder seu pai v&amp;iacute;tima de c&amp;acirc;ncer, ele enfrentou a depress&amp;atilde;o, mas foi atrav&amp;eacute;s da sua f&amp;eacute; e do trabalho social desenvolvido pelo Instituto Semear do qual &amp;eacute; fundador, foi que ele venceu essa doen&amp;ccedil;a triste que assola uma grande parte dos Brasileiros. Ronaldo disputou por duas vezes uma vaga na Casa de Jos&amp;eacute; Mariano, obtendo em sua primeira elei&amp;ccedil;&amp;atilde;o, em 2016, o quantitativo de 2.142 votos pelo PSD. Quarto anos depois, em 2020, ampliou esse n&amp;uacute;mero para 3.715 votos pelo PSC, ficando como primeiro suplente do partido.&amp;nbsp;&lt;/p&gt;\r\n&lt;p style=\"text-align: justify;\"&gt;Neste ano de 2023, Ronaldo Lopes ocupa uma das 39 cadeiras efetivas de vereador, levando a bandeira que sempre defendeu atrav&amp;eacute;s de sua luta, de ser a vez e a voz das comunidades recifenses.&lt;/p&gt;\r\n&lt;p&gt;Biografia Parlamentar inserida em 30/01/2023.&lt;/p&gt;\r\n&lt;p&gt;As informa&amp;ccedil;&amp;otilde;es acima s&amp;atilde;o de responsabilidade da assessoria de comunica&amp;ccedil;&amp;atilde;o do Vereador Ronaldo Lopes&lt;/p&gt;",
+      "birthday": "",
+      "cod_autor": "259",
+      "comissoes": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/45",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Acessibilidade e Mobilidade Urbana",
+          "description": "14/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "45",
+          "mandato": "Suplente",
+          "start": "2023-02-14",
+          "title": "Suplente"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@comissoes/52",
+          "@type": "ParticipanteComissao",
+          "comissao": "Comissão de Planejamento Urbano e Obras",
+          "description": "13/02/2023 a 31/12/2024",
+          "end": "2024-12-31",
+          "id": "52",
+          "mandato": "Titular",
+          "start": "2023-02-13",
+          "title": "Membro Efetivo"
+        }
+      ],
+      "email": "",
+      "filiacoes": [
+        {
+          "data_desfiliacao": "",
+          "data_filiacao": "2024-03-07",
+          "filiacao_atual": true,
+          "title": "Partido Progressista",
+          "token": "PP"
+        },
+        {
+          "data_desfiliacao": "2024-03-06",
+          "data_filiacao": "2019-11-01",
+          "filiacao_atual": false,
+          "title": "Partido Social Cristão",
+          "token": "PSC"
+        }
+      ],
+      "mandatos": [
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/19",
+          "@type": "Mandato",
+          "end": "2026-12-13",
+          "id": 19,
+          "natureza": "Suplente",
+          "start": "2026-06-13",
+          "votos": ""
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
+          "@type": "Mandato",
+          "end": "2024-12-31",
+          "id": 18,
+          "natureza": "Suplente",
+          "start": "2023-02-01",
+          "votos": "3715"
+        },
+        {
+          "@id": "https://e-processo.recife.pe.leg.br/@@legislaturas/18",
+          "@type": "Mandato",
+          "end": "2022-09-30",
+          "id": 18,
+          "natureza": "Suplente",
+          "start": "2022-06-06",
+          "votos": "3715"
+        }
+      ],
+      "mesas": [],
+      "telefone_gabinete": ""
+    },
+    {
       "@id": "https://e-processo.recife.pe.leg.br/@@vereadores/177",
       "@type": "Vereador",
       "description": "Samuel Salazar",
@@ -7253,7 +7637,16 @@
       "description": "Wilton Brito",
       "dic_vereador": "195",
       "id": "158",
-      "image": [],
+      "image": [
+        {
+          "content-type": "image/png",
+          "download": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/158_foto_parlamentar",
+          "filename": "158_foto_parlamentar",
+          "height": "350",
+          "size": "200837",
+          "width": "350"
+        }
+      ],
       "partido": [
         {
           "title": "Partido Socialista Brasileiro",
@@ -7261,7 +7654,7 @@
         }
       ],
       "title": "Wilton Brito",
-      "url_foto": "https://e-processo.recife.pe.leg.br/imagens/avatar.png",
+      "url_foto": "https://e-processo.recife.pe.leg.br/sapl_documentos/parlamentar/fotos/158_foto_parlamentar",
       "biografia": "&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:WordDocument&gt;\r\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\r\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\r\n  &lt;w:TrackMoves&gt;&lt;/w:TrackMoves&gt;\r\n  &lt;w:TrackFormatting&gt;&lt;/w:TrackFormatting&gt;\r\n  &lt;w:PunctuationKerning&gt;&lt;/w:PunctuationKerning&gt;\r\n  &lt;w:ValidateAgainstSchemas&gt;&lt;/w:ValidateAgainstSchemas&gt;\r\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\r\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\r\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\r\n  &lt;w:DoNotPromoteQF&gt;&lt;/w:DoNotPromoteQF&gt;\r\n  &lt;w:LidThemeOther&gt;EN-US&lt;/w:LidThemeOther&gt;\r\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\r\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\r\n  &lt;w:Compatibility&gt;\r\n   &lt;w:BreakWrappedTables&gt;&lt;/w:BreakWrappedTables&gt;\r\n   &lt;w:SnapToGridInCell&gt;&lt;/w:SnapToGridInCell&gt;\r\n   &lt;w:WrapTextWithPunct&gt;&lt;/w:WrapTextWithPunct&gt;\r\n   &lt;w:UseAsianBreakRules&gt;&lt;/w:UseAsianBreakRules&gt;\r\n   &lt;w:DontGrowAutofit&gt;&lt;/w:DontGrowAutofit&gt;\r\n   &lt;w:SplitPgBreakAndParaMark&gt;&lt;/w:SplitPgBreakAndParaMark&gt;\r\n   &lt;w:DontVertAlignCellWithSp&gt;&lt;/w:DontVertAlignCellWithSp&gt;\r\n   &lt;w:DontBreakConstrainedForcedTables&gt;&lt;/w:DontBreakConstrainedForcedTables&gt;\r\n   &lt;w:DontVertAlignInTxbx&gt;&lt;/w:DontVertAlignInTxbx&gt;\r\n   &lt;w:Word11KerningPairs&gt;&lt;/w:Word11KerningPairs&gt;\r\n   &lt;w:CachedColBalance&gt;&lt;/w:CachedColBalance&gt;\r\n  &lt;/w:Compatibility&gt;\r\n  &lt;m:mathPr&gt;\r\n   &lt;m:mathFont m:val=\"Cambria Math\"&gt;&lt;/m:mathFont&gt;\r\n   &lt;m:brkBin m:val=\"before\"&gt;&lt;/m:brkBin&gt;\r\n   &lt;m:brkBinSub m:val=\"--\"&gt;&lt;/m:brkBinSub&gt;\r\n   &lt;m:smallFrac m:val=\"off\"&gt;&lt;/m:smallFrac&gt;\r\n   &lt;m:dispDef&gt;&lt;/m:dispDef&gt;\r\n   &lt;m:lMargin m:val=\"0\"&gt;&lt;/m:lMargin&gt;\r\n   &lt;m:rMargin m:val=\"0\"&gt;&lt;/m:rMargin&gt;\r\n   &lt;m:defJc m:val=\"centerGroup\"&gt;&lt;/m:defJc&gt;\r\n   &lt;m:wrapIndent m:val=\"1440\"&gt;&lt;/m:wrapIndent&gt;\r\n   &lt;m:intLim m:val=\"subSup\"&gt;&lt;/m:intLim&gt;\r\n   &lt;m:naryLim m:val=\"undOvr\"&gt;&lt;/m:naryLim&gt;\r\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; text-align: justify; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:WordDocument&gt;\r\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\r\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\r\n  &lt;w:TrackMoves&gt;&lt;/w:TrackMoves&gt;\r\n  &lt;w:TrackFormatting&gt;&lt;/w:TrackFormatting&gt;\r\n  &lt;w:PunctuationKerning&gt;&lt;/w:PunctuationKerning&gt;\r\n  &lt;w:ValidateAgainstSchemas&gt;&lt;/w:ValidateAgainstSchemas&gt;\r\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\r\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\r\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\r\n  &lt;w:DoNotPromoteQF&gt;&lt;/w:DoNotPromoteQF&gt;\r\n  &lt;w:LidThemeOther&gt;EN-US&lt;/w:LidThemeOther&gt;\r\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\r\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\r\n  &lt;w:Compatibility&gt;\r\n   &lt;w:BreakWrappedTables&gt;&lt;/w:BreakWrappedTables&gt;\r\n   &lt;w:SnapToGridInCell&gt;&lt;/w:SnapToGridInCell&gt;\r\n   &lt;w:WrapTextWithPunct&gt;&lt;/w:WrapTextWithPunct&gt;\r\n   &lt;w:UseAsianBreakRules&gt;&lt;/w:UseAsianBreakRules&gt;\r\n   &lt;w:DontGrowAutofit&gt;&lt;/w:DontGrowAutofit&gt;\r\n   &lt;w:SplitPgBreakAndParaMark&gt;&lt;/w:SplitPgBreakAndParaMark&gt;\r\n   &lt;w:DontVertAlignCellWithSp&gt;&lt;/w:DontVertAlignCellWithSp&gt;\r\n   &lt;w:DontBreakConstrainedForcedTables&gt;&lt;/w:DontBreakConstrainedForcedTables&gt;\r\n   &lt;w:DontVertAlignInTxbx&gt;&lt;/w:DontVertAlignInTxbx&gt;\r\n   &lt;w:Word11KerningPairs&gt;&lt;/w:Word11KerningPairs&gt;\r\n   &lt;w:CachedColBalance&gt;&lt;/w:CachedColBalance&gt;\r\n  &lt;/w:Compatibility&gt;\r\n  &lt;m:mathPr&gt;\r\n   &lt;m:mathFont m:val=\"Cambria Math\"&gt;&lt;/m:mathFont&gt;\r\n   &lt;m:brkBin m:val=\"before\"&gt;&lt;/m:brkBin&gt;\r\n   &lt;m:brkBinSub m:val=\"--\"&gt;&lt;/m:brkBinSub&gt;\r\n   &lt;m:smallFrac m:val=\"off\"&gt;&lt;/m:smallFrac&gt;\r\n   &lt;m:dispDef&gt;&lt;/m:dispDef&gt;\r\n   &lt;m:lMargin m:val=\"0\"&gt;&lt;/m:lMargin&gt;\r\n   &lt;m:rMargin m:val=\"0\"&gt;&lt;/m:rMargin&gt;\r\n   &lt;m:defJc m:val=\"centerGroup\"&gt;&lt;/m:defJc&gt;\r\n   &lt;m:wrapIndent m:val=\"1440\"&gt;&lt;/m:wrapIndent&gt;\r\n   &lt;m:intLim m:val=\"subSup\"&gt;&lt;/m:intLim&gt;\r\n   &lt;m:naryLim m:val=\"undOvr\"&gt;&lt;/m:naryLim&gt;\r\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;/p&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; text-align: justify; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"267\"&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"&gt;&lt;/w:LsdException&gt;\r\n &lt;/w:LatentStyles&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 10]&gt;\r\n&lt;style&gt;\r\n /* Style Definitions */\r\n table.MsoNormalTable\r\n\t{mso-style-name:\"Tabela normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-qformat:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tline-height:115%;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",\"sans-serif\";\r\n\tmso-ascii-font-family:Calibri;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Calibri;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n&lt;/style&gt;\r\n&lt;![endif]--&gt;&lt;/p&gt;\r\n&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:WordDocument&gt;\r\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\r\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\r\n  &lt;w:TrackMoves/&gt;\r\n  &lt;w:TrackFormatting/&gt;\r\n  &lt;w:PunctuationKerning/&gt;\r\n  &lt;w:ValidateAgainstSchemas/&gt;\r\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\r\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\r\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\r\n  &lt;w:DoNotPromoteQF/&gt;\r\n  &lt;w:LidThemeOther&gt;EN-US&lt;/w:LidThemeOther&gt;\r\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\r\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\r\n  &lt;w:Compatibility&gt;\r\n   &lt;w:BreakWrappedTables/&gt;\r\n   &lt;w:SnapToGridInCell/&gt;\r\n   &lt;w:WrapTextWithPunct/&gt;\r\n   &lt;w:UseAsianBreakRules/&gt;\r\n   &lt;w:DontGrowAutofit/&gt;\r\n   &lt;w:SplitPgBreakAndParaMark/&gt;\r\n   &lt;w:DontVertAlignCellWithSp/&gt;\r\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\r\n   &lt;w:DontVertAlignInTxbx/&gt;\r\n   &lt;w:Word11KerningPairs/&gt;\r\n   &lt;w:CachedColBalance/&gt;\r\n  &lt;/w:Compatibility&gt;\r\n  &lt;m:mathPr&gt;\r\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\r\n   &lt;m:brkBin m:val=\"before\"/&gt;\r\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\r\n   &lt;m:smallFrac m:val=\"off\"/&gt;\r\n   &lt;m:dispDef/&gt;\r\n   &lt;m:lMargin m:val=\"0\"/&gt;\r\n   &lt;m:rMargin m:val=\"0\"/&gt;\r\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\r\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\r\n   &lt;m:intLim m:val=\"subSup\"/&gt;\r\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\r\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; text-align: justify; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt;Wilton Brito &amp;eacute; natural da cidade da Pedra, munic&amp;iacute;pio localizado no Agreste pernambucano. Filho de Edu&amp;iacute;no Cavalcanti Macambira e Maria Anunciada de Brito Cavalcanti, ele vem de uma fam&amp;iacute;lia de sete irm&amp;atilde;os. Mora no Recife desde 1976 e tem tr&amp;ecirc;s filhos: Jos&amp;eacute; Wilton Filho, Ana Clara e Maria Juliana. Formou-se em Engenharia Mec&amp;acirc;nica, na UPE.&lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; text-align: justify; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt;De tradicional fam&amp;iacute;lia pol&amp;iacute;tica, passou grande parte de sua vida no munic&amp;iacute;pio de Arcoverde. A exemplo de seu&lt;/span&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt; av&amp;ocirc;, Jos&amp;eacute; Macambira Filho, que foi prefeito da cidade da Pedra e de seu pai, Edu&amp;iacute;no Cavalcanti Macambira, vereador do mesmo munic&amp;iacute;pio por quatro mandatos, seguiu na carreira p&amp;uacute;blica, assim como seus irm&amp;atilde;os: Werner Brito, eleito vice-prefeito e Warton Brito, vereador de Arcoverde no pleito de 1996. Em 2012, seu irm&amp;atilde;o mais novo, Edu&amp;iacute;no Brito, foi eleito vereador de Arcoverde.&lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt;Por&amp;eacute;m, a veia pol&amp;iacute;tica por si s&amp;oacute; n&amp;atilde;o explicaria seus 4.518 votos. Desde 2000, se divide entre o trabalho de consultoria e o Projeto Social Movimento Esporte &amp;eacute; Vida, que tem por objetivo promover a inclus&amp;atilde;o social dos jovens de comunidades de baixa renda do Recife atrav&amp;eacute;s dos esportes. Focando assim o seu projeto na forma&amp;ccedil;&amp;atilde;o do cidad&amp;atilde;o. Deste Movimento j&amp;aacute; sa&amp;iacute;ram v&amp;aacute;rios atletas de futebol que jogam no Brasil e no exterior&lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt;Iniciado no Centro de Treinamento (CT) da Imbiribeira, que fica em frente ao Gin&amp;aacute;sio de Esportes Gerald&amp;atilde;o, o Projeto j&amp;aacute; beneficiou mais de seis mil jovens. O p&amp;uacute;blico alvo s&amp;atilde;o crian&amp;ccedil;as e adolescentes de 8 a 17 anos, que em virtude de suas atividades no projeto afastam-se das situa&amp;ccedil;&amp;otilde;es risco e da viol&amp;ecirc;ncia, atrav&amp;eacute;s da viv&amp;ecirc;ncia com o esporte. Para o vereador Wilton Brito, o seu trabalho &amp;eacute; de preven&amp;ccedil;&amp;atilde;o e n&amp;atilde;o, de corre&amp;ccedil;&amp;atilde;o. Desse modo, enquanto estes jovens se envolvem com o futebol, se afastam dos problemas que envolvem a espiral da viol&amp;ecirc;ncia. Al&amp;eacute;m do CT da Imbiribeira, o Projeto funciona no Engenho do Meio, Torre, C&amp;oacute;rrego da Fortuna (Dois Irm&amp;atilde;os) e Tejipi&amp;oacute;. &lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=\"MsoNormal\" style=\"margin-bottom: .0001pt; line-height: 111%; mso-outline-level: 2; background: white;\"&gt;&lt;span lang=\"PT-BR\" style=\"font-size: 9.5pt; line-height: 111%;\"&gt;Wilton pretende focar seu mandato na luta por melhores condi&amp;ccedil;&amp;otilde;es de vida para os moradores do Recife e pelo fortalecimento e amplia&amp;ccedil;&amp;atilde;o de seus projetos de inclus&amp;atilde;o social para crian&amp;ccedil;as e adolescentes. &lt;/span&gt;&lt;/p&gt;\r\n&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"267\"&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\r\n &lt;/w:LatentStyles&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 10]&gt;\r\n&lt;style&gt;\r\n /* Style Definitions */\r\n table.MsoNormalTable\r\n\t{mso-style-name:\"Tabela normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-qformat:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tline-height:115%;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",\"sans-serif\";\r\n\tmso-ascii-font-family:Calibri;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Calibri;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n&lt;/style&gt;\r\n&lt;![endif]--&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;!-- [if gte mso 9]&gt;&lt;xml&gt;\r\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\r\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\r\n  LatentStyleCount=\"267\"&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\r\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"&gt;&lt;/w:LsdException&gt;\r\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"&gt;&lt;/w:LsdException&gt;\r\n &lt;/w:LatentStyles&gt;\r\n&lt;/xml&gt;&lt;![endif]--&gt;&lt;!-- [if gte mso 10]&gt;\r\n&lt;style&gt;\r\n /* Style Definitions */\r\n table.MsoNormalTable\r\n\t{mso-style-name:\"Tabela normal\";\r\n\tmso-tstyle-rowband-size:0;\r\n\tmso-tstyle-colband-size:0;\r\n\tmso-style-noshow:yes;\r\n\tmso-style-priority:99;\r\n\tmso-style-qformat:yes;\r\n\tmso-style-parent:\"\";\r\n\tmso-padding-alt:0in 5.4pt 0in 5.4pt;\r\n\tmso-para-margin-top:0in;\r\n\tmso-para-margin-right:0in;\r\n\tmso-para-margin-bottom:10.0pt;\r\n\tmso-para-margin-left:0in;\r\n\tline-height:115%;\r\n\tmso-pagination:widow-orphan;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",\"sans-serif\";\r\n\tmso-ascii-font-family:Calibri;\r\n\tmso-ascii-theme-font:minor-latin;\r\n\tmso-fareast-font-family:\"Times New Roman\";\r\n\tmso-fareast-theme-font:minor-fareast;\r\n\tmso-hansi-font-family:Calibri;\r\n\tmso-hansi-theme-font:minor-latin;}\r\n&lt;/style&gt;\r\n&lt;![endif]--&gt;",
       "birthday": "1958-07-31",
       "cod_autor": "195",

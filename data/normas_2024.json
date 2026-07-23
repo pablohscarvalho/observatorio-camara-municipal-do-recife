@@ -3,10 +3,14 @@
   "@type": "Normas",
   "description": "Lista de normas jurídicas",
   "exemplo": {
-    "urlExemplo": "https://e-processo.recife.pe.leg.br/@@normas?ano=2025&tipo=5"
+    "urlExemplo": "https://e-processo.recife.pe.leg.br/@@normas?ano=2026&tipo=5"
   },
   "filtros": {
     "ano": [
+      {
+        "id": "2026",
+        "title": "2026"
+      },
       {
         "id": "2025",
         "title": "2025"

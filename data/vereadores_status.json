@@ -1,0 +1,30 @@
+{
+  "suplentes": {
+    "Chico Kiko": {
+      "tag": "Suplente em exercício"
+    },
+    "Douglas Brito Ativista": {
+      "tag": "Suplente em exercício",
+      "titular_substituido": "Alcides Teixeira Neto"
+    },
+    "Douglas Brito": {
+      "tag": "Suplente em exercício",
+      "titular_substituido": "Alcides Teixeira Neto"
+    },
+    "George Bastos": {
+      "tag": "Suplente em exercício"
+    },
+    "Jairo Britto": {
+      "tag": "Suplente em exercício",
+      "titular_substituido": "Flávia de Nadegi"
+    },
+    "Osmar Ricardo": {
+      "tag": "Suplente em exercício",
+      "titular_substituido": "Marco Aurélio Filho"
+    },
+    "Ronaldo Lopes": {
+      "tag": "Suplente em exercício",
+      "titular_substituido": "Alef Collins"
+    }
+  }
+}

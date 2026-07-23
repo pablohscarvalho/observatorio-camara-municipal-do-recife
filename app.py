@@ -5,6 +5,7 @@ import glob
 import unicodedata
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from datetime import datetime
 import zipfile
 
@@ -21,6 +22,49 @@ app.add_middleware(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 DADOS_EXTRAS_DIR = os.path.join(BASE_DIR, "dados_extras")
+FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
+
+MESES_VERBA = [
+    ("Jan", "Janeiro"),
+    ("Fev", "Fevereiro"),
+    ("Mar", "Março"),
+    ("Abr", "Abril"),
+    ("Mai", "Maio"),
+    ("Jun", "Junho"),
+    ("Jul", "Julho"),
+    ("Ago", "Agosto"),
+    ("Set", "Setembro"),
+    ("Out", "Outubro"),
+    ("Nov", "Novembro"),
+    ("Dez", "Dezembro"),
+]
+
+NOMES_VERBA_ARQUIVO = {
+    "aderaldo": "Aderaldo Pinto",
+    "alcides": "Alcides Teixeira Neto",
+    "alef": "Alef Collins",
+    "andreza": "Andreza Romero",
+    "carlos": "Carlos Muniz",
+    "chico": "Chico Kiko",
+    "cida": "Cida Pedrosa",
+    "davi": "Davi Muniz",
+    "douglas": "Douglas Brito Ativista",
+    "eduardo_mota": "Eduardo Mota",
+    "eduardo_moura": "Eduardo Moura",
+    "eriberto": "Eriberto Rafael",
+    "fabiano": "Fabiano Ferraz",
+    "felipe_alecrim": "Felipe Alecrim",
+    "felipe_francismar": "Felipe Francismar",
+    "flavia": "Flávia de Nadegi",
+    "fred": "Fred Ferreira",
+    "gilberto": "Gilberto Alves",
+    "gilson": "Gilson Machado Filho",
+    "helio": "Hélio Guabiraba",
+    "jairo": "Jairo Britto",
+    "jo": "Jô Cavalcanti",
+    "junior": "Júnior Bocão",
+    "rubem": "Agora é Rubem",
+}
 
 def ler_json(nome_arquivo: str):
     """Procura o JSON ou o ZIP na pasta 'data' ou solto na raiz do projeto"""
@@ -56,6 +100,231 @@ def ler_json(nome_arquivo: str):
             print(f"Erro ao ler zip: {e}")
             
     return {}
+
+def normalizar_chave(texto):
+    return remover_acentos(str(texto or "")).upper().strip()
+
+def obter_campo_normalizado(linha, nome_campo, padrao=""):
+    alvo = normalizar_chave(nome_campo)
+    for chave, valor in linha.items():
+        if normalizar_chave(chave) == alvo:
+            return valor
+    return padrao
+
+def formatar_data_br(data_iso):
+    if not data_iso:
+        return ""
+    try:
+        return datetime.strptime(data_iso, "%Y-%m-%d").strftime("%d/%m/%Y")
+    except ValueError:
+        return data_iso
+
+def limpar_valor_brasileiro(valor):
+    texto = str(valor or "").strip()
+    if not texto or texto == "-":
+        return 0.0
+    texto = texto.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".")
+    try:
+        return float(texto)
+    except ValueError:
+        return 0.0
+
+def arredondar_moeda(valor):
+    return round(float(valor or 0), 2)
+
+def chave_verba_arquivo(caminho_arquivo):
+    nome = os.path.basename(caminho_arquivo).replace(".csv", "")
+    return nome.replace("_verba_indenizatoria", "").strip("_")
+
+def nome_verba_arquivo(chave):
+    if chave in NOMES_VERBA_ARQUIVO:
+        return NOMES_VERBA_ARQUIVO[chave]
+    return " ".join(parte.capitalize() for parte in chave.split("_"))
+
+def arquivos_verba_indenizatoria(ano):
+    pastas = [
+        os.path.join(DADOS_EXTRAS_DIR, f"verbas_indenizatorias_{ano}"),
+        os.path.join(DADOS_EXTRAS_DIR, f"verbas_indenizatoras_{ano}"),
+    ]
+    arquivos = []
+    for pasta in pastas:
+        arquivos.extend(glob.glob(os.path.join(pasta, "*.csv")))
+    return sorted(set(arquivos))
+
+def carregar_verbas_indenizatorias(ano="2026"):
+    registros = []
+    for caminho_arquivo in arquivos_verba_indenizatoria(ano):
+        chave = chave_verba_arquivo(caminho_arquivo)
+        nome_vereador = nome_verba_arquivo(chave)
+        meses_totais = {mes: 0.0 for mes, _ in MESES_VERBA}
+        categorias = []
+        total_vereador = 0.0
+
+        try:
+            with open(caminho_arquivo, mode="r", encoding="utf-8-sig", newline="") as f:
+                leitor = csv.DictReader(f)
+                for linha in leitor:
+                    categoria = str(linha.get("Item", "")).strip()
+                    if not categoria:
+                        continue
+
+                    valores_mes = {}
+                    total_categoria = 0.0
+                    for mes, _ in MESES_VERBA:
+                        valor = limpar_valor_brasileiro(linha.get(mes, ""))
+                        valores_mes[mes] = arredondar_moeda(valor)
+                        meses_totais[mes] += valor
+                        total_categoria += valor
+
+                    total_vereador += total_categoria
+                    categorias.append({
+                        "categoria": categoria,
+                        "total": arredondar_moeda(total_categoria),
+                        "meses": valores_mes
+                    })
+        except Exception as e:
+            print(f"Erro ao ler verba indenizatória {caminho_arquivo}: {e}")
+            continue
+
+        registros.append({
+            "chave": chave,
+            "nome": nome_vereador,
+            "arquivo": os.path.basename(caminho_arquivo),
+            "total": arredondar_moeda(total_vereador),
+            "meses": {mes: arredondar_moeda(valor) for mes, valor in meses_totais.items()},
+            "categorias": categorias
+        })
+
+    return registros
+
+def resumir_verbas_indenizatorias(registros):
+    total = 0.0
+    categorias = {}
+    meses = {mes: 0.0 for mes, _ in MESES_VERBA}
+
+    for registro in registros:
+        total += registro["total"]
+        for mes, valor in registro["meses"].items():
+            meses[mes] += valor
+        for categoria in registro["categorias"]:
+            nome = categoria["categoria"]
+            categorias[nome] = categorias.get(nome, 0.0) + categoria["total"]
+
+    return {
+        "total": arredondar_moeda(total),
+        "vereadores_com_dados": len(registros),
+        "categorias": [
+            {"categoria": nome, "total": arredondar_moeda(valor)}
+            for nome, valor in sorted(categorias.items(), key=lambda item: item[1], reverse=True)
+        ],
+        "meses": [
+            {"mes": mes, "nome": nome_mes, "total": arredondar_moeda(meses[mes])}
+            for mes, nome_mes in MESES_VERBA
+        ],
+        "vereadores": [
+            {
+                "chave": registro["chave"],
+                "nome": registro["nome"],
+                "arquivo": registro["arquivo"],
+                "total": registro["total"]
+            }
+            for registro in sorted(registros, key=lambda item: item["total"], reverse=True)
+        ]
+    }
+
+def combina_verba_com_vereador(nome_vereador, registro):
+    alvo = normalizar_chave(nome_vereador)
+    if not alvo:
+        return False
+
+    nomes_possiveis = [
+        normalizar_chave(registro["nome"]),
+        normalizar_chave(registro["chave"].replace("_", " ")),
+    ]
+    for nome in nomes_possiveis:
+        if nome and (nome in alvo or alvo in nome):
+            return True
+        partes = [p for p in nome.split() if len(p) > 2]
+        if partes and all(parte in alvo for parte in partes):
+            return True
+    return False
+
+def agregar_registros_verba(registros):
+    resumo = resumir_verbas_indenizatorias(registros)
+    categorias_detalhadas = {}
+
+    for registro in registros:
+        for categoria in registro["categorias"]:
+            nome = categoria["categoria"]
+            if nome not in categorias_detalhadas:
+                categorias_detalhadas[nome] = {
+                    "categoria": nome,
+                    "total": 0.0,
+                    "meses": {mes: 0.0 for mes, _ in MESES_VERBA}
+                }
+            categorias_detalhadas[nome]["total"] += categoria["total"]
+            for mes, valor in categoria["meses"].items():
+                categorias_detalhadas[nome]["meses"][mes] += valor
+
+    categorias = []
+    for categoria in categorias_detalhadas.values():
+        categorias.append({
+            "categoria": categoria["categoria"],
+            "total": arredondar_moeda(categoria["total"]),
+            "meses": {mes: arredondar_moeda(valor) for mes, valor in categoria["meses"].items()}
+        })
+
+    return {
+        "total": resumo["total"],
+        "meses": resumo["meses"],
+        "categorias": sorted(categorias, key=lambda item: item["total"], reverse=True)
+    }
+
+def obter_status_suplente(vereador, status_config):
+    nome = vereador.get("title", vereador.get("description", ""))
+    descricao = vereador.get("description", "")
+    suplentes = status_config.get("suplentes", {}) if isinstance(status_config, dict) else {}
+    suplentes_por_nome = {normalizar_chave(k): v for k, v in suplentes.items()}
+
+    status_manual = suplentes_por_nome.get(normalizar_chave(nome)) or suplentes_por_nome.get(normalizar_chave(descricao))
+    mandatos = vereador.get("mandatos", [])
+    mandato_suplente = None
+    for mandato in mandatos:
+        if str(mandato.get("id")) == "19" and normalizar_chave(mandato.get("natureza")) == "SUPLENTE":
+            if not mandato_suplente or str(mandato.get("start", "")) > str(mandato_suplente.get("start", "")):
+                mandato_suplente = mandato
+
+    if not status_manual and not mandato_suplente:
+        return None
+
+    inicio = mandato_suplente.get("start", "") if mandato_suplente else ""
+    fim = mandato_suplente.get("end", "") if mandato_suplente else ""
+    titular = status_manual.get("titular_substituido", "") if status_manual else ""
+    tag = status_manual.get("tag", "Suplente em exercício") if status_manual else "Suplente em exercício"
+
+    observacao = tag
+    periodo_texto = ""
+    if inicio and fim:
+        periodo_texto = f"{formatar_data_br(inicio)} a {formatar_data_br(fim)}"
+        observacao = f"{tag} de {periodo_texto}"
+    elif inicio:
+        periodo_texto = f"desde {formatar_data_br(inicio)}"
+        observacao = f"{tag} {periodo_texto}"
+
+    if titular:
+        observacao = f"{observacao}, substituindo {titular}."
+    else:
+        observacao = f"{observacao}."
+
+    return {
+        "tipo": "suplente",
+        "tag": tag,
+        "titular_substituido": titular,
+        "inicio": inicio,
+        "fim": fim,
+        "periodo": periodo_texto,
+        "observacao": observacao
+    }
 
 def remover_acentos(texto):
     return ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
@@ -98,6 +367,22 @@ def combinar_nomes(nome_perfil, nome_folha):
             return any(sobrenome in partes_f for sobrenome in partes_p[1:])
         return True 
     return False
+
+def combinar_gabinete(nome_vereador, lotacao):
+    nome_limpo = remover_acentos(nome_vereador).upper().strip()
+    lotacao_limpa = remover_acentos(lotacao).upper().replace("VER. ", "").strip()
+    if not nome_limpo or not lotacao_limpa:
+        return False
+    aliases_gabinete = {
+        "ROMERINHO JATOBA": "ROMERO JATOBA CAVALCANTI NETO",
+        "RONALDO LOPES": "ALEF COLLINS",
+    }
+    alias = aliases_gabinete.get(nome_limpo)
+    if alias and alias in lotacao_limpa:
+        return True
+    if nome_limpo in lotacao_limpa or lotacao_limpa in nome_limpo:
+        return True
+    return combinar_nomes(nome_vereador, lotacao_limpa)
 
 @app.get("/stats")
 def resumo_geral():
@@ -157,9 +442,19 @@ def resumo_remuneracao_total(ano: str = "2026"):
             pass
     return {"total": total_bruto}
 
+@app.get("/stats/verba-indenizatoria")
+def resumo_verba_indenizatoria(ano: str = "2026"):
+    registros = carregar_verbas_indenizatorias(ano)
+    resumo = resumir_verbas_indenizatorias(registros)
+    return {
+        "ano": ano,
+        **resumo
+    }
+
 @app.get("/vereadores")
 def listar_vereadores():
     dados = ler_json("vereadores_detalhados.json") or ler_json("vereadores.json")
+    status_config = ler_json("vereadores_status.json")
     items_originais = dados.get("items", [])
     items_formatados = []
     for v in items_originais:
@@ -180,11 +475,13 @@ def listar_vereadores():
                 foto_url = imagem_dado[0].get("download", "")
         comissoes_dado = v.get("comissoes", [])
         lista_comissoes_formatada = [c.get("comissao", "") for c in comissoes_dado if isinstance(c, dict) and c.get("comissao")]
+        status_parlamentar = obter_status_suplente(v, status_config)
         items_formatados.append({
             "id": v.get("id"), "nome": nome, "partido": partido_sigla,
             "fotografia": foto_url, "comissoes": lista_comissoes_formatada,
             "telefone": v.get("telefone_gabinete", "Não informado"),
-            "email": v.get("email", "Não informado")
+            "email": v.get("email", "Não informado"),
+            "status_parlamentar": status_parlamentar
         })
     return {"items": items_formatados}
 
@@ -235,6 +532,22 @@ def obter_historico_remuneracao(vereador_id: str, nome_vereador: str):
         except: pass
     return sorted(historico, key=lambda x: (x['periodo'].split('/')[1], x['periodo'].split('/')[0]))
 
+@app.get("/vereadores/{vereador_id}/verba-indenizatoria")
+def obter_verba_indenizatoria_vereador(vereador_id: str, nome_vereador: str = "", ano: str = "2026"):
+    registros = carregar_verbas_indenizatorias(ano)
+    registros_vereador = [
+        registro for registro in registros
+        if combina_verba_com_vereador(nome_vereador, registro)
+    ]
+    agregado = agregar_registros_verba(registros_vereador)
+    return {
+        "ano": ano,
+        "vereador_id": vereador_id,
+        "nome_vereador": nome_vereador,
+        "arquivos": [registro["arquivo"] for registro in registros_vereador],
+        **agregado
+    }
+
 @app.get("/proposicoes/tipos")
 def listar_tipos_proposicoes(ano: str = "2025"):
     dados = ler_json("materias_por_tipo.json")
@@ -284,10 +597,12 @@ def obter_comissionados_gabinete(vereador_id: str, nome_vereador: str):
             leitor = csv.DictReader(f, delimiter=";")
             for linha in leitor:
                 # No CSV dos comissionados, a coluna se chama "Lotação Secretaria/Diretoria"
-                lotacao = remover_acentos(linha.get("Lotação Secretaria/Diretoria", "")).upper()
+                lotacao = remover_acentos(
+                    obter_campo_normalizado(linha, "Lotação Secretaria/Diretoria", "")
+                ).upper().strip()
                 
                 # Se o nome do vereador está na lotação (mesmo com "VER." na frente)
-                if nome_ver_limpo in lotacao or lotacao.replace("VER. ", "").strip() in nome_ver_limpo:
+                if combinar_gabinete(nome_vereador, lotacao):
                     bruto_str = linha.get("Total de Vantagens", "0").replace(",", ".")
                     try:
                         bruto = float(bruto_str)
@@ -309,3 +624,6 @@ def obter_comissionados_gabinete(vereador_id: str, nome_vereador: str):
         "periodo": periodo_str,
         "servidores": sorted(servidores, key=lambda x: x["bruto"], reverse=True)
     }
+
+if os.path.exists(FRONTEND_DIR):
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
