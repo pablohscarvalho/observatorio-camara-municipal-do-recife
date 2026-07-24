@@ -76,9 +76,11 @@ header,
 .app-title-line h1 {
     margin: 0;
     color: #1e293b;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    line-height: 1.05;
+    max-width: 1120px;
+    font-size: clamp(1.45rem, 2.8vw, 2.45rem);
+    line-height: 1.12;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .app-subtitle {
@@ -121,7 +123,12 @@ header,
 .kpi-card {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
+}
+
+.kpi-info {
+    min-width: 0;
+    flex: 1;
 }
 
 .kpi-icon {
@@ -141,16 +148,23 @@ header,
 .orange { background-color: #f59e0b; }
 
 .kpi-info .label {
+    display: block;
     font-size: 0.85rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: bold;
+    line-height: 1.35;
 }
 
 .kpi-info h2 {
-    font-size: 1.8rem;
+    font-size: clamp(1.45rem, 2.2vw, 1.8rem);
     margin-top: 5px;
+    white-space: nowrap;
+}
+
+#total-verbas {
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
 }
 
 .charts-grid {

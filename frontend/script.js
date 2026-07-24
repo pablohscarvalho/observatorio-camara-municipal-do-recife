@@ -135,7 +135,7 @@ async function loadDashboard() {
                 document.getElementById('total-verbas').innerText = formatarMoeda(dadosRemTotal.total || 0);
                 const labelRemTotal = document.getElementById('total-verbas').previousElementSibling;
                 if (labelRemTotal && dadosRemTotal.periodo_final) {
-                    labelRemTotal.innerText = `RemuneraÃ§Ã£o Bruta atÃ© ${dadosRemTotal.periodo_final}`;
+                    labelRemTotal.innerText = `Remunera\u00e7\u00e3o Bruta at\u00e9 ${dadosRemTotal.periodo_final}`;
                 }
             }
         } catch(e) { document.getElementById('total-verbas').innerText = "R$ 0,00"; }
