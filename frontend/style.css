@@ -85,9 +85,10 @@ header,
 
 .app-subtitle {
     color: #475569;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    max-width: 860px;
+    font-size: clamp(1rem, 1.7vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 .app-author {
