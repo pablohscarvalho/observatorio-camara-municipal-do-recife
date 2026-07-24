@@ -123,7 +123,9 @@ def limpar_valor_brasileiro(valor):
     texto = str(valor or "").strip()
     if not texto or texto == "-":
         return 0.0
-    texto = texto.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".")
+    texto = texto.replace("R$", "").replace(" ", "")
+    if "," in texto:
+        texto = texto.replace(".", "").replace(",", ".")
     try:
         return float(texto)
     except ValueError:
@@ -131,6 +133,20 @@ def limpar_valor_brasileiro(valor):
 
 def arredondar_moeda(valor):
     return round(float(valor or 0), 2)
+
+def extrair_periodo_remuneracao(caminho_arquivo):
+    nome_base = os.path.basename(caminho_arquivo)
+    partes = nome_base.replace(".csv", "").split("_")
+    try:
+        mes = int(partes[-2])
+        ano = int(partes[-1])
+        return {
+            "mes": mes,
+            "ano": ano,
+            "periodo": f"{mes:02d}/{ano}"
+        }
+    except (ValueError, IndexError):
+        return None
 
 def chave_verba_arquivo(caminho_arquivo):
     nome = os.path.basename(caminho_arquivo).replace(".csv", "")
@@ -430,17 +446,27 @@ def resumo_remuneracao_total(ano: str = "2026"):
     padrao = os.path.join(DADOS_EXTRAS_DIR, "**", f"remuneracao_vereadores_*_{ano}.csv")
     arquivos = glob.glob(padrao, recursive=True)
     total_bruto = 0.0
+    periodos = []
     for caminho_arquivo in arquivos:
+        periodo = extrair_periodo_remuneracao(caminho_arquivo)
+        if periodo:
+            periodos.append(periodo)
         try:
             with open(caminho_arquivo, mode="r", encoding="utf-8-sig") as f:
                 leitor = csv.DictReader(f, delimiter=";")
                 for linha in leitor:
                     bruto_str = linha.get("Total de Vantagens", "0")
                     if bruto_str.strip():
-                        total_bruto += float(bruto_str)
+                        total_bruto += limpar_valor_brasileiro(bruto_str)
         except Exception as e:
             pass
-    return {"total": total_bruto}
+    periodos = sorted(periodos, key=lambda item: (item["ano"], item["mes"]))
+    return {
+        "total": total_bruto,
+        "periodo_inicial": periodos[0]["periodo"] if periodos else "",
+        "periodo_final": periodos[-1]["periodo"] if periodos else "",
+        "meses_carregados": len({item["periodo"] for item in periodos})
+    }
 
 @app.get("/stats/verba-indenizatoria")
 def resumo_verba_indenizatoria(ano: str = "2026"):
@@ -517,20 +543,23 @@ def obter_historico_remuneracao(vereador_id: str, nome_vereador: str):
     arquivos = glob.glob(padrao, recursive=True)
     historico = []
     for caminho_arquivo in arquivos:
-        nome_base = os.path.basename(caminho_arquivo)
-        partes = nome_base.replace(".csv", "").split("_")
-        mes_ano = f"{partes[-2]}/{partes[-1]}"
+        periodo = extrair_periodo_remuneracao(caminho_arquivo)
+        if not periodo:
+            continue
         try:
             with open(caminho_arquivo, mode="r", encoding="utf-8-sig") as f:
                 leitor = csv.DictReader(f, delimiter=";")
                 for linha in leitor:
                     if combinar_nomes(nome_vereador, linha.get("Nome", "")):
                         historico.append({
-                            "periodo": mes_ano, "bruto": float(linha.get("Total de Vantagens", 0)),
-                            "liquido": float(linha.get("Valor Líquido", 0))
+                            "periodo": periodo["periodo"],
+                            "mes": periodo["mes"],
+                            "ano": periodo["ano"],
+                            "bruto": limpar_valor_brasileiro(linha.get("Total de Vantagens", 0)),
+                            "liquido": limpar_valor_brasileiro(linha.get("Valor Líquido", 0))
                         })
         except: pass
-    return sorted(historico, key=lambda x: (x['periodo'].split('/')[1], x['periodo'].split('/')[0]))
+    return sorted(historico, key=lambda x: (x["ano"], x["mes"]))
 
 @app.get("/vereadores/{vereador_id}/verba-indenizatoria")
 def obter_verba_indenizatoria_vereador(vereador_id: str, nome_vereador: str = "", ano: str = "2026"):

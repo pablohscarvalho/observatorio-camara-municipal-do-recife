@@ -133,6 +133,10 @@ async function loadDashboard() {
             if (resRemTotal.ok) {
                 const dadosRemTotal = await resRemTotal.json();
                 document.getElementById('total-verbas').innerText = formatarMoeda(dadosRemTotal.total || 0);
+                const labelRemTotal = document.getElementById('total-verbas').previousElementSibling;
+                if (labelRemTotal && dadosRemTotal.periodo_final) {
+                    labelRemTotal.innerText = `RemuneraÃ§Ã£o Bruta atÃ© ${dadosRemTotal.periodo_final}`;
+                }
             }
         } catch(e) { document.getElementById('total-verbas').innerText = "R$ 0,00"; }
 
@@ -698,14 +702,41 @@ function filtrarListaDeProposicoesNaTela(tipoDesejado, botaoClicado) {
     }
 }
 
+function obterOrdemPeriodoSalario(item) {
+    if (item.ano && item.mes) return { ano: Number(item.ano), mes: Number(item.mes) };
+    const [mes, ano] = String(item.periodo || '').split('/').map(Number);
+    return { ano: ano || 0, mes: mes || 0 };
+}
+
+function ordenarHistoricoSalario(dados) {
+    return [...dados].sort((a, b) => {
+        const periodoA = obterOrdemPeriodoSalario(a);
+        const periodoB = obterOrdemPeriodoSalario(b);
+        return periodoA.ano - periodoB.ano || periodoA.mes - periodoB.mes;
+    });
+}
+
+function rotuloAcumuladoSalario(dados, anoFiltro) {
+    if (!dados.length) {
+        return anoFiltro === 'todos'
+            ? 'Nenhum perÃ­odo de remuneraÃ§Ã£o localizado.'
+            : `Nenhum perÃ­odo de remuneraÃ§Ã£o localizado em ${anoFiltro}.`;
+    }
+
+    const ordenados = ordenarHistoricoSalario(dados);
+    const periodoInicial = ordenados[0].periodo;
+    const periodoFinal = ordenados[ordenados.length - 1].periodo;
+    if (periodoInicial === periodoFinal) return `Bruto acumulado em ${periodoFinal}`;
+    return `Bruto acumulado de ${periodoInicial} a ${periodoFinal}`;
+}
+
 function renderizarGraficoSalario(anoFiltro) {
     let dadosFiltrados = historicoSalarioGlobal;
     if (anoFiltro !== 'todos') {
         dadosFiltrados = historicoSalarioGlobal.filter(item => item.periodo.includes(anoFiltro));
-        document.getElementById('label-gasto-total').innerText = `Bruto no ano de ${anoFiltro}`;
-    } else {
-        document.getElementById('label-gasto-total').innerText = `Bruto em todos os anos`;
     }
+    dadosFiltrados = ordenarHistoricoSalario(dadosFiltrados);
+    document.getElementById('label-gasto-total').innerText = rotuloAcumuladoSalario(dadosFiltrados, anoFiltro);
 
     let totalAcumulado = dadosFiltrados.reduce((acc, mes) => acc + mes.bruto, 0);
     document.getElementById('perfil-gasto-total').innerText = formatarMoeda(totalAcumulado);
