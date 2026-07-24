@@ -345,9 +345,15 @@ def obter_status_suplente(vereador, status_config):
 def remover_acentos(texto):
     return ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
 
+def normalizar_nome_pessoa(texto):
+    texto = remover_acentos(str(texto or "")).upper()
+    for caractere in ".,;-_/":
+        texto = texto.replace(caractere, " ")
+    return " ".join(texto.split())
+
 def combinar_nomes(nome_perfil, nome_folha):
-    n_p = remover_acentos(nome_perfil).upper().strip()
-    n_f = remover_acentos(nome_folha).upper().strip()
+    n_p = normalizar_nome_pessoa(nome_perfil)
+    n_f = normalizar_nome_pessoa(nome_folha)
     
     prefixos = ["PROFESSORA ", "PROFESSOR ", "PASTOR ", "IRMA ", "DR. ", "DRA. "]
     for p in prefixos:
@@ -385,8 +391,8 @@ def combinar_nomes(nome_perfil, nome_folha):
     return False
 
 def combinar_gabinete(nome_vereador, lotacao):
-    nome_limpo = remover_acentos(nome_vereador).upper().strip()
-    lotacao_limpa = remover_acentos(lotacao).upper().replace("VER. ", "").strip()
+    nome_limpo = normalizar_nome_pessoa(nome_vereador)
+    lotacao_limpa = normalizar_nome_pessoa(lotacao).replace("VER ", "").strip()
     if not nome_limpo or not lotacao_limpa:
         return False
     aliases_gabinete = {
@@ -541,7 +547,7 @@ def listar_proposicoes_vereador(vereador_id: str, nome_vereador: str = "", ano: 
 def obter_historico_remuneracao(vereador_id: str, nome_vereador: str):
     padrao = os.path.join(DADOS_EXTRAS_DIR, "**", "remuneracao_vereadores_*.csv")
     arquivos = glob.glob(padrao, recursive=True)
-    historico = []
+    historico_por_periodo = {}
     for caminho_arquivo in arquivos:
         periodo = extrair_periodo_remuneracao(caminho_arquivo)
         if not periodo:
@@ -550,16 +556,24 @@ def obter_historico_remuneracao(vereador_id: str, nome_vereador: str):
             with open(caminho_arquivo, mode="r", encoding="utf-8-sig") as f:
                 leitor = csv.DictReader(f, delimiter=";")
                 for linha in leitor:
-                    if combinar_nomes(nome_vereador, linha.get("Nome", "")):
-                        historico.append({
-                            "periodo": periodo["periodo"],
-                            "mes": periodo["mes"],
-                            "ano": periodo["ano"],
-                            "bruto": limpar_valor_brasileiro(linha.get("Total de Vantagens", 0)),
-                            "liquido": limpar_valor_brasileiro(linha.get("Valor Líquido", 0))
-                        })
+                    if combinar_nomes(nome_vereador, obter_campo_normalizado(linha, "Nome", "")):
+                        chave = (periodo["ano"], periodo["mes"])
+                        if chave not in historico_por_periodo:
+                            historico_por_periodo[chave] = {
+                                "periodo": periodo["periodo"],
+                                "mes": periodo["mes"],
+                                "ano": periodo["ano"],
+                                "bruto": 0.0,
+                                "liquido": 0.0
+                            }
+                        historico_por_periodo[chave]["bruto"] += limpar_valor_brasileiro(
+                            obter_campo_normalizado(linha, "Total de Vantagens", 0)
+                        )
+                        historico_por_periodo[chave]["liquido"] += limpar_valor_brasileiro(
+                            obter_campo_normalizado(linha, "Valor Liquido", 0)
+                        )
         except: pass
-    return sorted(historico, key=lambda x: (x["ano"], x["mes"]))
+    return sorted(historico_por_periodo.values(), key=lambda x: (x["ano"], x["mes"]))
 
 @app.get("/vereadores/{vereador_id}/verba-indenizatoria")
 def obter_verba_indenizatoria_vereador(vereador_id: str, nome_vereador: str = "", ano: str = "2026"):
